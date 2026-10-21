@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn</title>
+  <meta name="description" content="Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online.">
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ========================================================
+       1. CSS VARIABLES & DYNAMIC THEME
+       ======================================================== */
+    :root {
+      /* Màu chủ đạo xanh lá Pastel nhẹ nhàng, tươi mát */
+      --primary: #10B981;
+      --primary-hover: #059669;
+      --primary-light: rgba(16, 185, 129, 0.12);
+      --primary-border: rgba(16, 185, 129, 0.25);
+      --primary-glow: rgba(16, 185, 129, 0.32);
+
+      --bg-cream: #F8FAF8;
+      --card-bg: #FFFFFF;
+      --text-main: #232733;
+      --text-sub: #717B8A;
+      --border-color: #E6EFE8;
+      --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.04);
+      --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.08);
+      --radius-xl: 22px;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --radius-pill: 999px;
+    }
+
+    /* CHỐNG TRÀN VÀ LỆCH MÀN HÌNH MOBILE TUYỆT ĐỐI */
+    html, body {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 12px 60px;
+      position: relative;
+      transition: background-color 0.5s ease;
+    }
+
+    /* WRAPPER ĐỰNG CÁC QUẢ CẦU MÀU NỀN (CỐ ĐỊNH, CHỐNG TRÀN LỆCH MOBILE) */
+    .bg-shapes-wrap {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(85px);
+      opacity: 0.55;
+      pointer-events: none;
+      transition: all 0.8s ease;
+    }
+    .shape-1 {
+      top: -30px;
+      left: -40px;
+      width: 240px;
+      height: 240px;
+      background: var(--primary-glow);
+    }
+    .shape-2 {
+      top: 260px;
+      right: -40px;
+      width: 220px;
+      height: 220px;
+      background: #D1FAE5;
+      opacity: 0.45;
+    }
+    .shape-3 {
+      bottom: 80px;
+      left: 10px;
+      width: 260px;
+      height: 260px;
+      background: var(--primary-light);
+      opacity: 0.4;
+    }
+
+    .main-wrap {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* HERO PROFILE CARD (CĂN GIỮA CHUẨN XÁC 100%) */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: var(--radius-xl);
+      padding: 24px 16px 20px;
+      text-align: center;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+      border: 1.5px solid rgba(255, 255, 255, 0.9);
+      margin-bottom: 14px;
+      position: relative;
+      width: 100%;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 12px;
+    }
+
+    .avatar-pulse-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #34D399);
+      opacity: 0.7;
+      filter: blur(2px);
+      transition: all 0.5s ease;
+    }
+
+    .avatar-img-real {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3.5px solid #FFFFFF;
+      box-shadow: 0 6px 18px var(--primary-glow);
+      background: #FFF;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      width: 25px;
+      height: 25px;
+      background: #1877F2;
+      border-radius: 50%;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      border: 2.5px solid #FFF;
+      box-shadow: 0 2px 8px rgba(24, 119, 242, 0.4);
+      z-index: 3;
+    }
+
+    .store-name {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .channel-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 10px;
+      border: 1px solid var(--primary-border);
+      transition: all 0.4s ease;
+    }
+
+    .store-tagline {
+      font-size: 13px;
+      color: #4A5568;
+      line-height: 1.5;
+      font-weight: 500;
+      max-width: 400px;
+      margin: 0 auto 16px;
+      padding: 0 4px;
+    }
+
+    .social-btn-wrap {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* NÚT FANPAGE FACEBOOK CHÍNH CHỦ DUY NHẤT */
+    .social-pill-fb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      max-width: 360px;
+      background: linear-gradient(135deg, #1877F2, #0D65D9);
+      color: #FFF;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 11px 16px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 14px rgba(24, 119, 242, 0.28);
+      transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .social-pill-fb:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(24, 119, 242, 0.38);
+    }
+
+    /* STICKY FILTER BAR (GHIM PHÍA TRÊN KHI CUỘN, CĂN CHUẨN MÀN HÌNH) */
+    .sticky-filter-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(250, 247, 245, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 8px 0 10px;
+      width: 100%;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding: 0 2px;
+    }
+    .section-title {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-main);
+    }
+    .product-counter {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 3px 9px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--primary-border);
+      transition: all 0.4s ease;
+    }
+
+    /* SEARCH BAR */
+    .search-wrapper {
+      position: relative;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    .search-wrapper input {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-pill);
+      padding: 9px 14px 9px 38px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      outline: none;
+      transition: all 0.25s ease;
+    }
+    .search-wrapper input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+    .search-icon-svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: var(--text-sub);
+    }
+
+    /* CATEGORY PILLS BAR */
+    .category-pills-bar {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 2px 2px 4px 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+    }
+    .category-pills-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-pill-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-sub);
+      white-space: nowrap;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .cat-pill-btn.active, .cat-pill-btn:hover {
+      background: var(--primary);
+      color: #FFF;
+      border-color: var(--primary);
+      box-shadow: 0 3px 10px var(--primary-glow);
+    }
+
+    /* PRODUCTS GRID (CHIA ĐỀU 50/50 KHÔNG BAO GIỜ BỊ LỆCH) */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 4px;
+      width: 100%;
+    }
+
+    /* SẢN PHẨM CARD */
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      min-width: 0; /* ĐẢM BẢO KHÔNG BỊ TRÀN Ô GRID */
+      animation: fadeInCard 0.35s ease forwards;
+    }
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--primary-border);
+    }
+
+    .card-thumb-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #F4F6F8;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: block;
+    }
+    .product-card:hover .card-thumb {
+      transform: scale(1.06);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background: var(--primary);
+      color: #FFF;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2.5px 7px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+      z-index: 2;
+      transition: background 0.4s ease;
+      white-space: nowrap;
+    }
+
+    .card-info {
+      padding: 8px 8px 10px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-width: 0;
+    }
+
+    /* TIÊU ĐỀ CỐ ĐỊNH 2 DÒNG ĐỂ CÁC THẺ LUÔN THẲNG HÀNG NHAU */
+    .item-title {
+      font-size: 11.5px;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--text-main);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 6px;
+      height: 32px; /* CỐ ĐỊNH CHIỀU CAO 2 DÒNG */
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: auto;
+      margin-bottom: 8px;
+    }
+    .item-price {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--primary);
+      transition: color 0.4s ease;
+    }
+    .item-sold {
+      font-size: 10px;
+      font-weight: 600;
+      color: #8C98A4;
+      white-space: nowrap;
+    }
+
+    .buy-link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 7px 6px;
+      width: 100%;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+    .buy-link-btn:hover {
+      background: var(--primary);
+      color: #FFF;
+      border-color: var(--primary);
+      box-shadow: 0 3px 10px var(--primary-glow);
+    }
+
+    /* LOAD MORE BUTTON CUTE */
+    .load-more-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 18px;
+      gap: 6px;
+      width: 100%;
+    }
+    .load-more-btn {
+      background: #FFFFFF;
+      color: var(--primary);
+      border: 1.5px solid var(--primary-border);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .load-more-btn:hover {
+      background: var(--primary);
+      color: #FFF;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 16px var(--primary-glow);
+    }
+    .load-progress-text {
+      font-size: 11px;
+      color: var(--text-sub);
+      font-weight: 500;
+    }
+
+    /* SHIMMER SKELETON LOADING */
+    .skeleton-card {
+      background: #FFF;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+    .skeleton-thumb {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(90deg, #F0EDE8 25%, #F8F6F4 50%, #F0EDE8 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+    .skeleton-info {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .skeleton-line {
+      height: 11px;
+      background: linear-gradient(90deg, #F0EDE8 25%, #F8F6F4 50%, #F0EDE8 75%);
+      background-size: 200% 100%;
+      border-radius: 6px;
+      animation: shimmer 1.5s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    /* STATUS EMPTY */
+    .status-msg-box {
+      grid-column: span 2;
+      background: #FFF;
+      border-radius: var(--radius-lg);
+      padding: 32px 16px;
+      text-align: center;
+      border: 1.5px dashed var(--border-color);
+      color: var(--text-sub);
+    }
+    .status-icon {
+      font-size: 32px;
+      margin-bottom: 6px;
+    }
+
+    /* HOME INTRO CARD (DÀNH RIÊNG CHO TRANG CHỦ QUẢNG CÁO) */
+    .home-intro-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-xl);
+      padding: 22px 18px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .intro-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      align-self: flex-start;
+      border: 1px solid var(--primary-border);
+    }
+    .intro-headline {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.35;
+      margin: 0;
+    }
+    .intro-desc {
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: var(--text-sub);
+      margin: 0;
+    }
+    .channel-list-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 6px;
+    }
+    .channel-cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .channel-entry-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #F9FAFB;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 10px 14px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .channel-entry-card:hover {
+      border-color: var(--primary);
+      background: #FFF;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .channel-entry-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #FFF;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      flex-shrink: 0;
+    }
+    .channel-entry-info {
+      flex-grow: 1;
+      min-width: 0;
+    }
+    .channel-entry-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .badge-mini {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: var(--radius-pill);
+      white-space: nowrap;
+    }
+    .channel-entry-sub {
+      font-size: 11px;
+      color: var(--text-sub);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .channel-entry-arrow {
+      font-size: 14px;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border-color);
+      text-align: center;
+    }
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .feature-icon {
+      font-size: 20px;
+    }
+    .feature-text {
+      font-size: 10.5px;
+      color: var(--text-sub);
+      line-height: 1.35;
+    }
+
+    /* SKELETON CHANNEL CARD */
+    .skeleton-channel-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #F9FAFB;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 10px 14px;
+    }
+    .skeleton-channel-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #F0EDE8 25%, #F8F6F4 50%, #F0EDE8 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      flex-shrink: 0;
+    }
+    .skeleton-channel-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-sub);
+      width: 100%;
+    }
+    footer strong {
+      color: var(--primary);
+      transition: color 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND DECORATIVE ORBS TRONG CONTAINER CHỐNG TRÀN -->
+  <div class="bg-shapes-wrap">
+    <div class="bg-shape shape-1" id="bgShape1"></div>
+    <div class="bg-shape shape-2" id="bgShape2"></div>
+    <div class="bg-shape shape-3" id="bgShape3"></div>
+  </div>
+
+  <div class="main-wrap">
+
+    <!-- HERO PROFILE CARD -->
+    <div class="profile-card">
+      <div class="avatar-wrap">
+        <div class="avatar-pulse-ring" id="avatarRing"></div>
+        <img 
+          src="./logo.png" 
+          alt="Avatar Tiệm Rinh Đồ" 
+          class="avatar-img-real" 
+          id="channelAvatar"
+        >
+        <div class="verified-badge" title="Hệ Thống Đã Xác Minh">✓</div>
+      </div>
+      
+      <h1 class="store-name" id="storeName">Tiệm Rinh Đồ</h1>
+      <div class="channel-tag" id="channelTag">🛍️ Hệ Thống Khám Phá Deal & Review</div>
+      
+      <p class="store-tagline" id="storeTagline">
+        Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online. 👇🛒
+      </p>
+
+      <!-- SOCIAL BUTTON: FANPAGE FACEBOOK (CHỈ HIỂN THỊ KHI CÓ THAM SỐ TRANG ?c=) -->
+      <div class="social-btn-wrap" id="socialBtnWrap" style="display: none;">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill-fb" id="fbLink">
+          <span id="fbLinkText">📘 Ghé Thăm Fanpage Facebook</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- TRANG CHỦ: KHỐI GIỚI THIỆU & QUẢNG CÁO TIỆM RINH ĐỒ (CHỈ HIỆN KHI KHÔNG CÓ ?c=) -->
+    <div id="homeIntroSection" class="home-intro-card" style="display: none;">
+      <div class="intro-badge">✨ Giới Thiệu Tiệm Rinh Đồ</div>
+      <h2 class="intro-headline">Khám Phá Đồ Hay, Săn Deal Xịn Mỗi Ngày</h2>
+      <p class="intro-desc">
+        Chào mừng bạn đến với <strong>Tiệm Rinh Đồ</strong>! Trang chuyên chọn lọc những sản phẩm hữu ích, đồ gia dụng thông minh, phụ kiện công nghệ và món ăn ngon được review thực tế từ các video trên hệ sinh thái mạng xã hội.
+      </p>
+
+      <div style="background: #F9FAFB; border-radius: var(--radius-md); padding: 12px 14px; border: 1px dashed var(--border-color); font-size: 12px; color: var(--text-sub); line-height: 1.55;">
+        💡 <strong>Mẹo nhỏ:</strong> Để xem đúng giỏ hàng các món đồ xuất hiện trong video review bạn vừa xem, hãy bấm vào link được gắn ở <strong>phần bình luận hoặc Bio</strong> của Fanpage đó nhé!
+      </div>
+
+      <!-- DANH SÁCH FANPAGE HỆ THỐNG (ĐỌC ĐỘNG TỪ GOOGLE SHEET TAB: tiemrinhdo) -->
+      <div id="channelsContainer" style="margin-top: 4px;">
+        <div class="channel-list-title">👇 Ghé thăm giỏ hàng của các kênh review:</div>
+        <div class="channel-cards-list" id="homeChannelsList">
+          <!-- SKELETON SHIMMER PLACEHOLDER KHI ĐANG TẢI KÊNH -->
+          <div class="skeleton-channel-card">
+            <div class="skeleton-channel-avatar"></div>
+            <div class="skeleton-channel-info">
+              <div class="skeleton-line" style="width: 55%; height: 13px;"></div>
+              <div class="skeleton-line" style="width: 85%; height: 10px;"></div>
+            </div>
+          </div>
+          <div class="skeleton-channel-card">
+            <div class="skeleton-channel-avatar"></div>
+            <div class="skeleton-channel-info">
+              <div class="skeleton-line" style="width: 45%; height: 13px;"></div>
+              <div class="skeleton-line" style="width: 70%; height: 10px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🔍</div>
+          <div class="feature-text"><strong>Review Thật</strong><br>Trải nghiệm thật</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🛒</div>
+          <div class="feature-text"><strong>Uy Tín</strong><br>Shopee Mall</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-text"><strong>Deal Xịn</strong><br>Freeship 0Đ</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KHỐI SẢN PHẨM (CHỈ HIỂN THỊ KHI TRUY CẬP VÀO KÊNH CỤ THỂ QUA ?c=...) -->
+    <div id="productsSection" style="display: none; width: 100%;">
+      <!-- STICKY FILTER & SEARCH BAR -->
+      <div class="sticky-filter-wrapper">
+        <div class="section-header">
+          <div class="section-title">
+            <span id="sectionTitleText">🛍️ Sản Phẩm Đã Review</span>
+          </div>
+          <span class="product-counter" id="itemCountBadge">Đang nạp...</span>
+        </div>
+
+        <div class="search-wrapper">
+          <span class="search-icon-svg">🔍</span>
+          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, đồ review...">
+        </div>
+
+        <div class="category-pills-bar" id="categoryPills">
+          <button class="cat-pill-btn active" data-cat="all">🌟 Tất Cả</button>
+        </div>
+      </div>
+
+      <!-- PRODUCTS GRID -->
+      <div class="product-grid" id="productGrid">
+        <!-- SKELETON SHIMMER PLACEHOLDER KHI ĐANG TẢI -->
+        <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:80%"></div><div class="skeleton-line" style="width:50%"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:85%"></div><div class="skeleton-line" style="width:45%"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:75%"></div><div class="skeleton-line" style="width:55%"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:90%"></div><div class="skeleton-line" style="width:40%"></div></div></div>
+      </div>
+
+      <!-- LOAD MORE PROGRESS BAR & BUTTON -->
+      <div class="load-more-wrap" id="loadMoreSection" style="display: none;">
+        <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreProducts()">
+          <span>👇 Xem thêm sản phẩm</span>
+        </button>
+        <span class="load-progress-text" id="loadProgressText">Đang hiển thị...</span>
+      </div>
+    </div>
+
+    <footer>
+      <p>❤️ Cảm ơn bạn đã theo dõi <strong id="footerStoreName">kênh</strong>!</p>
+      <p style="font-size: 11.5px; margin-top: 4px; opacity: 0.7;">Tiệm Rinh Đồ • Sản phẩm mua trực tiếp qua sàn TMĐT Shopee</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // ========================================================
+    // 1. CẤU HÌNH WEB APP & BIẾN TOÀN CỤC
+    // ========================================================
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxrz3L2ML7oiG_F3gBBkfZN5hP9cOsGJ0LPJQmWSmLqE2oiBtXNckCZdlsm5ioppSJ7AQ/exec'; 
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelKey = urlParams.get('c') || urlParams.get('shop') || urlParams.get('channel') || '';
+
+    // SERVER-SIDE STATE
+    let currentPage = 1;
+    const PAGE_LIMIT = 8;
+    let currentCat = 'all';
+    let currentKeyword = '';
+    let loadedProducts = [];
+    let hasMore = false;
+    let totalItems = 0;
+    let isLoading = false;
+    let searchDebounceTimer = null;
+    let channelInfoLoaded = false;
+
+    // ========================================================
+    // 2. CẬP NHẬT MÀU SẮC CHỦ ĐẠO(THEME COLOR)
+    // ========================================================
+    function applyThemeHex(hex) {
+      if (!hex || !hex.startsWith('#')) return;
+      let c = hex.substring(1);
+      if (c.length === 3) c = c.split('').map(x => x + x).join('');
+      const num = parseInt(c, 16);
+      const r = (num >> 16) & 255;
+      const g = (num >> 8) & 255;
+      const b = num & 255;
+
+      const root = document.documentElement;
+      const primaryRgb = `${r}, ${g}, ${b}`;
+      const hoverR = Math.max(0, r - 25);
+      const hoverG = Math.max(0, g - 25);
+      const hoverB = Math.max(0, b - 25);
+
+      root.style.setProperty('--primary', `rgb(${primaryRgb})`);
+      root.style.setProperty('--primary-hover', `rgb(${hoverR}, ${hoverG}, ${hoverB})`);
+      root.style.setProperty('--primary-light', `rgba(${primaryRgb}, 0.12)`);
+      root.style.setProperty('--primary-border', `rgba(${primaryRgb}, 0.28)`);
+      root.style.setProperty('--primary-glow', `rgba(${primaryRgb}, 0.38)`);
+
+      const bgShape1 = document.getElementById('bgShape1');
+      const bgShape3 = document.getElementById('bgShape3');
+      if (bgShape1) bgShape1.style.background = `rgba(${primaryRgb}, 0.25)`;
+      if (bgShape3) bgShape3.style.background = `rgba(${primaryRgb}, 0.18)`;
+    }
+
+    // ========================================================
+    // 3. SERVER-SIDE FETCH: LẤY DỮ LIỆU ĐÃ PHÂN TRANG
+    // ========================================================
+    async function fetchServerSideProducts(isAppend = false) {
+      if (isLoading) return;
+      isLoading = true;
+
+      const grid = document.getElementById('productGrid');
+      const badge = document.getElementById('itemCountBadge');
+      const loadMoreSec = document.getElementById('loadMoreSection');
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      const progressText = document.getElementById('loadProgressText');
+
+      if (!isAppend) {
+        // Hiển thị skeleton shimmer khi tải lại trang 1
+        grid.innerHTML = `
+          <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:80%"></div><div class="skeleton-line" style="width:50%"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:85%"></div><div class="skeleton-line" style="width:45%"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:75%"></div><div class="skeleton-line" style="width:55%"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-thumb"></div><div class="skeleton-info"><div class="skeleton-line" style="width:90%"></div><div class="skeleton-line" style="width:40%"></div></div></div>
+        `;
+        loadMoreSec.style.display = 'none';
+      } else {
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.innerHTML = '<span>⏳ Đang nạp thêm sản phẩm...</span>';
+      }
+
+      try {
+        const queryParams = new URLSearchParams({
+          page: currentPage.toString(),
+          limit: PAGE_LIMIT.toString()
+        });
+
+        if (channelKey) {
+          queryParams.set('sheet', channelKey);
+        }
+
+        if (currentCat && currentCat !== 'all') {
+          queryParams.set('category', currentCat);
+        }
+        if (currentKeyword) {
+          queryParams.set('q', currentKeyword);
+        }
+
+        const res = await fetch(`${APPS_SCRIPT_URL}?${queryParams.toString()}`, {
+          signal: AbortSignal.timeout(12000)
+        });
+
+        if (!res.ok) throw new Error('Không thể kết nối');
+        const json = await res.json();
+
+        // 1. Áp dụng cấu hình Kênh & Màu sắc lần đầu
+        if (!channelInfoLoaded) {
+          const rawKey = urlParams.get('c') || urlParams.get('shop') || urlParams.get('channel') || '';
+          const hasChannel = Boolean(rawKey && rawKey.toLowerCase() !== 'tiemrinhdo');
+          const DEFAULT_MASCOT = './logo.png';
+
+          if (hasChannel) {
+            const ch = json.channel || {};
+            let pageName = ch.name;
+            if (!pageName || (rawKey.toLowerCase() !== 'anlanghien' && pageName === 'Ăn Là Nghiền')) {
+              pageName = rawKey.toUpperCase();
+            }
+
+            document.getElementById('storeName').textContent = pageName;
+            document.title = `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`;
+            const footerName = document.getElementById('footerStoreName');
+            if (footerName) footerName.textContent = pageName;
+
+            if (ch.bio && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+              document.getElementById('storeTagline').textContent = ch.bio;
+            } else {
+              document.getElementById('storeTagline').textContent = 'Tất cả sản phẩm xuất hiện trong các video review của kênh đều ở đây hết nha! 👇🛒';
+            }
+
+            const avatarEl = document.getElementById('channelAvatar');
+            if (ch.avatarUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+              avatarEl.src = ch.avatarUrl;
+            } else {
+              avatarEl.src = DEFAULT_MASCOT;
+            }
+
+            const fbWrap = document.getElementById('socialBtnWrap');
+            const fbLink = document.getElementById('fbLink');
+            const fbText = document.getElementById('fbLinkText');
+            if (ch.facebookUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+              if (fbLink) fbLink.href = ch.facebookUrl;
+              if (fbText) fbText.textContent = `📘 Ghé Thăm Fanpage: ${pageName}`;
+              if (fbWrap) fbWrap.style.display = 'block';
+            } else {
+              if (fbWrap) fbWrap.style.display = 'none';
+            }
+
+            const tagEl = document.getElementById('channelTag');
+            const secTitleEl = document.getElementById('sectionTitleText');
+            if (tagEl) tagEl.textContent = '✨ Kênh Review Sản Phẩm';
+            if (secTitleEl) secTitleEl.textContent = '🛍️ Sản Phẩm Đã Review';
+
+          } else {
+            // Khi vào trang gốc không có ?c= -> Giữ nguyên 100% thương hiệu chung "Tiệm Rinh Đồ"
+            document.getElementById('storeName').textContent = 'Tiệm Rinh Đồ';
+            document.title = 'Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn';
+            document.getElementById('storeTagline').textContent = 'Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online. 👇🛒';
+            document.getElementById('channelTag').textContent = '🛍️ Hệ Thống Khám Phá Deal & Review';
+            document.getElementById('sectionTitleText').textContent = '🛍️ Sản Phẩm & Deal Nổi Bật';
+            document.getElementById('channelAvatar').src = DEFAULT_MASCOT;
+            document.getElementById('socialBtnWrap').style.display = 'none';
+            const footerName = document.getElementById('footerStoreName');
+            if (footerName) footerName.textContent = 'Tiệm Rinh Đồ';
+          }
+
+          if (json.channel && json.channel.themeColor) {
+            applyThemeHex(json.channel.themeColor);
+          }
+          channelInfoLoaded = true;
+        }
+
+        // 2. Render danh mục Category Pills (lần đầu)
+        if (!document.getElementById('categoryPills').hasAttribute('data-rendered')) {
+          if (json.categories && json.categories.length > 0) {
+            renderCategoryPills(json.categories);
+          } else if (Array.isArray(json.products) && json.products.length > 0) {
+            // Tự động trích xuất danh mục nếu server cũ chưa trả về categories
+            const catMap = new Map();
+            json.products.forEach(p => {
+              if (p.category && p.categoryName && !catMap.has(p.category)) {
+                catMap.set(p.category, { slug: p.category, name: p.categoryName, count: 0 });
+              }
+              if (p.category && catMap.has(p.category)) {
+                catMap.get(p.category).count++;
+              }
+            });
+            renderCategoryPills(Array.from(catMap.values()));
+          }
+        }
+
+        // 3. Xử lý dữ liệu phân trang
+        const isServerPaginated = Boolean(json.pagination);
+        let incomingItems = [];
+
+        if (isServerPaginated) {
+          totalItems = json.pagination.total !== undefined ? json.pagination.total : (json.products ? json.products.length : 0);
+          hasMore = Boolean(json.pagination.hasMore);
+          incomingItems = Array.isArray(json.products) ? json.products : [];
+        } else {
+          // Fallback client-side nếu chưa có pagination
+          let currentBatch = Array.isArray(json.products) ? json.products : [];
+          let fullList = currentBatch.filter(item => {
+            const matchCat = (currentCat === 'all') || (item.category === currentCat);
+            const matchKw = !currentKeyword || 
+              (item.title && item.title.toLowerCase().includes(currentKeyword.toLowerCase())) ||
+              (item.categoryName && item.categoryName.toLowerCase().includes(currentKeyword.toLowerCase()));
+            return matchCat && matchKw;
+          });
+
+          totalItems = fullList.length;
+          const offset = (currentPage - 1) * PAGE_LIMIT;
+          incomingItems = fullList.slice(offset, offset + PAGE_LIMIT);
+          hasMore = (offset + incomingItems.length) < fullList.length;
+        }
+
+        if (isAppend) {
+          loadedProducts = loadedProducts.concat(incomingItems);
+        } else {
+          loadedProducts = incomingItems;
+        }
+
+        // 4. Render thẻ sản phẩm (Append trực tiếp vào cuối DOM thay vì vẽ lại từ đầu)
+        renderProductsDOM(incomingItems, isAppend);
+
+        // 5. Cập nhật badge & thanh Load more
+        badge.textContent = `${totalItems} sản phẩm`;
+
+        if (hasMore) {
+          loadMoreSec.style.display = 'flex';
+          const remaining = totalItems - loadedProducts.length;
+          loadMoreBtn.disabled = false;
+          loadMoreBtn.innerHTML = `<span>👇 Xem thêm sản phẩm (+${Math.min(remaining, PAGE_LIMIT)})</span>`;
+          progressText.textContent = `Đang hiển thị ${loadedProducts.length} / ${totalItems} sản phẩm`;
+        } else {
+          loadMoreSec.style.display = 'none';
+        }
+
+      } catch (err) {
+        console.warn('Lỗi gọi API Google Apps Script:', err.message);
+        if (!isAppend) {
+          badge.textContent = '0 sản phẩm';
+          grid.innerHTML = `
+            <div class="status-msg-box">
+              <div class="status-icon">🛍️</div>
+              <p>Chưa có sản phẩm nào${channelKey ? ` trên Tab: <strong>${channelKey}</strong>` : ''}</p>
+              <p style="font-size: 12px; margin-top: 6px;">Vui lòng kiểm tra lại.</p>
+            </div>
+          `;
+        }
+      } finally {
+        isLoading = false;
+        loadMoreBtn.disabled = false;
+      }
+    }
+
+    // ========================================================
+    // 4. RENDER GIAO DIỆN SẢN PHẨM (TỐI ƯU APPEND, KHÔNG LOAD LẠI DOM CŨ)
+    // ========================================================
+    function createProductCardHtml(item, idx) {
+      return `
+        <div class="product-card" style="animation-delay: ${(idx % PAGE_LIMIT) * 0.04}s">
+          <div class="card-thumb-wrap">
+            ${item.badge ? `<span class="card-badge">${item.badge}</span>` : ''}
+            <img 
+              src="${item.imageUrl || 'https://via.placeholder.com/300'}" 
+              alt="${item.title}" 
+              class="card-thumb" 
+              loading="lazy"
+              onerror="this.src='https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqr4bbk2rdot47'"
+            >
+          </div>
+          <div class="card-info">
+            <div class="item-title" title="${item.title}">${item.title}</div>
+            <div class="price-row">
+              <span class="item-price">${item.price || 'Giá tốt'}</span>
+              ${item.sold ? `<span class="item-sold">${item.sold}</span>` : ''}
+            </div>
+            <a href="${item.affiliateUrl}" target="_blank" rel="noopener noreferrer" class="buy-link-btn">
+              <span>🛒 Mua trên Shopee</span>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderProductsDOM(items, isAppend) {
+      const grid = document.getElementById('productGrid');
+
+      if (!isAppend) {
+        if (!items || items.length === 0) {
+          grid.innerHTML = `
+            <div class="status-msg-box">
+              <div class="status-icon">🔍</div>
+              <p>Không tìm thấy sản phẩm nào phù hợp với tìm kiếm của bạn.</p>
+            </div>
+          `;
+          return;
+        }
+        grid.innerHTML = items.map((item, idx) => createProductCardHtml(item, idx)).join('');
+      } else {
+        // Chỉ nối các phần tử mới vào cuối danh sách, giữ nguyên toàn bộ các phần tử cũ
+        if (items && items.length > 0) {
+          const newHtml = items.map((item, idx) => createProductCardHtml(item, idx)).join('');
+          grid.insertAdjacentHTML('beforeend', newHtml);
+        }
+      }
+    }
+
+    function renderCategoryPills(categories) {
+      const pillsContainer = document.getElementById('categoryPills');
+      pillsContainer.setAttribute('data-rendered', 'true');
+
+      let totalAll = categories.reduce((sum, c) => sum + (c.count || 0), 0);
+      let html = `<button class="cat-pill-btn ${currentCat === 'all' ? 'active' : ''}" data-cat="all">🌟 Tất Cả (${totalAll})</button>`;
+
+      categories.forEach(cat => {
+        html += `<button class="cat-pill-btn ${currentCat === cat.slug ? 'active' : ''}" data-cat="${cat.slug}">${cat.name} (${cat.count})</button>`;
+      });
+
+      pillsContainer.innerHTML = html;
+
+      pillsContainer.querySelectorAll('.cat-pill-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (isLoading) return;
+          pillsContainer.querySelectorAll('.cat-pill-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentCat = btn.getAttribute('data-cat');
+          currentPage = 1;
+          fetchServerSideProducts(false);
+        });
+      });
+    }
+
+    function loadMoreProducts() {
+      if (isLoading || !hasMore) return;
+      currentPage++;
+      fetchServerSideProducts(true);
+    }
+
+    // ========================================================
+    // 5. EVENT LISTENERS: TÌM KIẾM DEBOUNCE
+    // ========================================================
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      currentKeyword = e.target.value.trim();
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        currentPage = 1;
+        fetchServerSideProducts(false);
+      }, 350);
+    });
+
+    // ========================================================
+    // 6. TẢI DANH SÁCH KÊNH HỆ THỐNG TỪ SHEET tiemrinhdo
+    // ========================================================
+    async function fetchChannelsForHomepage() {
+      const container = document.getElementById('channelsContainer');
+      const listEl = document.getElementById('homeChannelsList');
+      if (!container || !listEl) return;
+
+      try {
+        const res = await fetch(`${APPS_SCRIPT_URL}?sheet=tiemrinhdo`, {
+          signal: AbortSignal.timeout(8000)
+        });
+        if (!res.ok) return;
+        const json = await res.json();
+
+        if (json.channels && Array.isArray(json.channels) && json.channels.length > 0) {
+          listEl.innerHTML = json.channels.map(c => `
+            <a href="?c=${encodeURIComponent(c.slug || '')}" class="channel-entry-card">
+              <img 
+                src="${c.avatarUrl || './logo.png'}" 
+                alt="${c.name}" 
+                class="channel-entry-avatar"
+                onerror="this.src='./logo.png'"
+              >
+              <div class="channel-entry-info">
+                <div class="channel-entry-name">
+                  <span>${c.name}</span>
+                  ${c.badge ? `<span class="badge-mini">${c.badge}</span>` : ''}
+                </div>
+                <div class="channel-entry-sub">${c.description || 'Xem sản phẩm & giỏ hàng review'}</div>
+              </div>
+              <span class="channel-entry-arrow">👉</span>
+            </a>
+          `).join('');
+          container.style.display = 'block';
+        }
+      } catch (err) {
+        console.warn('Lỗi tải danh sách kênh từ sheet tiemrinhdo:', err.message);
+      }
+    }
+
+    // ========================================================
+    // 7. KHỞI TẠO TRANG DỰA THEO QUERY PARAM (?c=)
+    // ========================================================
+    function initLandingPage() {
+      const rawKey = (urlParams.get('c') || urlParams.get('shop') || urlParams.get('channel') || '').trim();
+      const isChannel = Boolean(rawKey && rawKey.toLowerCase() !== 'tiemrinhdo');
+
+      const homeIntro = document.getElementById('homeIntroSection');
+      const productsSec = document.getElementById('productsSection');
+
+      if (!isChannel) {
+        // --- 1. TRANG CHỦ QUẢNG CÁO TIỆM RINH ĐỒ (KHÔNG CÓ SẢN PHẨM) ---
+        if (homeIntro) homeIntro.style.display = 'flex';
+        if (productsSec) productsSec.style.display = 'none';
+
+        document.getElementById('storeName').textContent = 'Tiệm Rinh Đồ';
+        document.title = 'Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn';
+        document.getElementById('storeTagline').textContent = 'Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online. 👇🛒';
+        document.getElementById('channelTag').textContent = '🛍️ Hệ Thống Khám Phá Deal & Review';
+        document.getElementById('channelAvatar').src = './logo.png';
+        document.getElementById('socialBtnWrap').style.display = 'none';
+        const footerName = document.getElementById('footerStoreName');
+        if (footerName) footerName.textContent = 'Tiệm Rinh Đồ';
+
+        // Tải danh sách các Fanpage hệ thống từ Google Sheet Tab: tiemrinhdo
+        fetchChannelsForHomepage();
+      } else {
+        // --- 2. TRANG GIỎ HÀNG CỦA KÊNH REVIEW CỤ THỂ (?c=...) ---
+        if (homeIntro) homeIntro.style.display = 'none';
+        if (productsSec) productsSec.style.display = 'block';
+
+        // Gán ngay lập tức thông tin của kênh để không bị chớp hay trễ
+        if (rawKey.toLowerCase() === 'anlanghien') {
+          document.getElementById('storeName').textContent = 'Ăn Là Nghiền';
+          document.title = 'Ăn Là Nghiền - Tiệm Rinh Đồ | Link Món Ngon Review';
+          document.getElementById('storeTagline').textContent = 'Tất cả sản phẩm & món ngon xuất hiện trong các video review của page đều ở đây hết nha! 👇🛒';
+          document.getElementById('channelTag').textContent = '🍲 Fanpage Review Món Ngon';
+          document.getElementById('channelAvatar').src = 'https://graph.facebook.com/1356736564195772/picture?type=large';
+          document.getElementById('fbLink').href = 'https://www.facebook.com/1356736564195772';
+          document.getElementById('fbLinkText').textContent = '📘 Ghé Thăm Fanpage: Ăn Là Nghiền';
+          document.getElementById('socialBtnWrap').style.display = 'block';
+          const footerName = document.getElementById('footerStoreName');
+          if (footerName) footerName.textContent = 'Ăn Là Nghiền';
+        } else {
+          const upperName = rawKey.toUpperCase();
+          document.getElementById('storeName').textContent = upperName;
+          document.title = `${upperName} - Tiệm Rinh Đồ | Sản Phẩm Review`;
+          document.getElementById('channelTag').textContent = '✨ Kênh Review Sản Phẩm';
+          document.getElementById('socialBtnWrap').style.display = 'none';
+          const footerName = document.getElementById('footerStoreName');
+          if (footerName) footerName.textContent = upperName;
+        }
+
+        // Gọi nạp sản phẩm cho kênh này từ Google Sheet
+        fetchServerSideProducts(false);
+      }
+    }
+
+    // Khởi động trang
+    initLandingPage();
+  </script>
+</body>
+</html>
