@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "sheet": "tiemrinhdo",
+  "type": "channels_list",
+  "count": 3,
+  "channels": [
+    {
+      "name": "Ăn Là Nghiền",
+      "slug": "anlanghien",
+      "description": "Thấy ngon là lưu😋 Review món ngon & đồ ăn vặt mỗi ngày! Ghé giỏ hàng chính hãng: https://tiemrinhdo.github.io/shop/?c=anlanghien",
+      "avatarUrl": "https://graph.facebook.com/1356736564195772/picture?type=large",
+      "facebookUrl": "https://www.facebook.com/1356736564195772",
+      "badge": "🔥 Kênh Hot"
+    },
+    {
+      "name": "Ghiền Hải Sản",
+      "slug": "ghienhaisan",
+      "description": "Chuyên review hải sản tươi ngon, mukbang đồ biển độc lạ & đồ khô ăn liền Shopee",
+      "avatarUrl": "https://graph.facebook.com/1364412760093063/picture?type=large",
+      "facebookUrl": "https://www.facebook.com/1364412760093063",
+      "badge": "✨ Kênh Mới"
+    },
+    {
+      "name": "Mê Ẩm Thực",
+      "slug": "meamthuc",
+      "description": "Kênh review ẩm thực, món ăn vặt đường phố và gia vị nấu ăn thần thánh. Đầy đủ giỏ hàng Shopee cho các tín đồ mê ăn uống! - Ghé giỏ hàng: https://tiemrinhdo.github.io/shop/?c=meamthuc",
+      "avatarUrl": "https://graph.facebook.com/1404382612752352/picture?type=large",
+      "facebookUrl": "https://www.facebook.com/1404382612752352",
+      "badge": "✨ Kênh Mới"
+    }
+  ],
+  "updatedAt": "2026-10-22T05:27:54.444Z"
+}

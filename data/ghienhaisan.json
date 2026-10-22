@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "sheet": "ghienhaisan",
+  "channel": {
+    "name": "Ghiền Hải Sản",
+    "facebookUrl": "https://www.facebook.com/1364412760093063",
+    "avatarUrl": "https://graph.facebook.com/1364412760093063/picture?type=large",
+    "bio": "Chuyên review hải sản tươi ngon, mukbang đồ biển độc lạ & đồ khô ăn liền Shopee",
+    "themeColor": "#0284C7"
+  },
+  "categories": [
+    {
+      "slug": "hai-san-kho",
+      "name": "🦐 Hải Sản Khô & Rim",
+      "count": 4
+    },
+    {
+      "slug": "muoi-cham",
+      "name": "🌶️ Nước Chấm & Muối Ớt",
+      "count": 0
+    },
+    {
+      "slug": "hai-san-tuoi",
+      "name": "🦞 Hải Sản Tươi & Cấp Đông",
+      "count": 2
+    },
+    {
+      "slug": "mon-nhau-bien",
+      "name": "🍺 Món Nhậu Biển Bén",
+      "count": 0
+    },
+    {
+      "slug": "dung-cu",
+      "name": "🦀 Dụng Cụ Ăn Hải Sản",
+      "count": 0
+    }
+  ],
+  "products": [
+    {
+      "sheet": "ghienhaisan",
+      "title": "Bánh qui giòn ăn kiêng 9 loại rau củ / phomai / hạt đủ vị Weisiel -...",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "3.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mpaydqyn5hq934",
+      "affiliateUrl": "https://s.shopee.vn/5VWGhwm6HI",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Dao Cạo Nam/ Lưỡi Dao Cạo GILLETTE Proglide 5 Lưỡi",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "3.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8259g-muio9d7z3fgo9f",
+      "affiliateUrl": "https://s.shopee.vn/3qO49hkCBG?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "[ 1Kg ] Vảy Cá Gạo SẠCH nấu thạch rau câu COLLAGEN dưỡng da, mặt nạ...",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "4.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mj8d75w3u9s7f3",
+      "affiliateUrl": "https://s.shopee.vn/3g4dxOkpWF?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Hải sâm Đại Liên 9A Trường Hải chính gốc dã sinh khô hải sâm gai hộp...",
+      "category": "hai-san-tuoi",
+      "categoryName": "🦞 Hải Sản Tươi & Cấp Đông",
+      "price": "59.000đ",
+      "sold": "5.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8257x-mu4jwbdy0uf702",
+      "affiliateUrl": "https://s.shopee.vn/2qVWxro0D6?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Sốt gạch cua Trung Hoa Cao Cấp",
+      "category": "hai-san-tuoi",
+      "categoryName": "🦞 Hải Sản Tươi & Cấp Đông",
+      "price": "59.000đ",
+      "sold": "11.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9cgdzuqjo8e10",
+      "affiliateUrl": "https://s.shopee.vn/2gC6lYodY5?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Sầu Riêng Cấp Đông (Tách múi) Quà Không Áp Dụng Cộng Dồn - Foodmap...",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "7.1k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqr4j90r0zr438",
+      "affiliateUrl": "https://s.shopee.vn/3VlCOmmCbT?lp=aff",
+      "badge": "🔥 Bán chạy"
+    }
+  ],
+  "updatedAt": "2026-10-22T05:28:00.869Z"
+}

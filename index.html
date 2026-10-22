@@ -941,8 +941,86 @@
       if (bgShape3) bgShape3.style.background = `rgba(${primaryRgb}, 0.18)`;
     }
 
+    // STATIC DATA CACHE & HELPERS
+    let staticChannelData = null;
+    let hasAttemptedStaticFetch = false;
+
+    function removeVietnameseTones(str) {
+      if (!str) return '';
+      return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'D')
+        .toLowerCase();
+    }
+
+    function applyChannelMetadata(ch) {
+      if (channelInfoLoaded) return;
+      const rawKey = urlParams.get('c') || urlParams.get('shop') || urlParams.get('channel') || '';
+      const hasChannel = Boolean(rawKey && rawKey.toLowerCase() !== 'tiemrinhdo');
+      const DEFAULT_MASCOT = './logo.png';
+
+      if (hasChannel) {
+        let pageName = ch.name;
+        if (!pageName || (rawKey.toLowerCase() !== 'anlanghien' && pageName === 'Ăn Là Nghiền')) {
+          pageName = rawKey.toUpperCase();
+        }
+
+        document.getElementById('storeName').textContent = pageName;
+        document.title = `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`;
+        const footerName = document.getElementById('footerStoreName');
+        if (footerName) footerName.textContent = pageName;
+
+        if (ch.bio && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+          document.getElementById('storeTagline').textContent = ch.bio;
+        } else {
+          document.getElementById('storeTagline').textContent = 'Tất cả sản phẩm xuất hiện trong các video review của kênh đều ở đây hết nha! 👇🛒';
+        }
+
+        const avatarEl = document.getElementById('channelAvatar');
+        if (ch.avatarUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+          avatarEl.src = ch.avatarUrl;
+        } else {
+          avatarEl.src = DEFAULT_MASCOT;
+        }
+
+        const fbWrap = document.getElementById('socialBtnWrap');
+        const fbLink = document.getElementById('fbLink');
+        const fbText = document.getElementById('fbLinkText');
+        if (ch.facebookUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
+          if (fbLink) fbLink.href = ch.facebookUrl;
+          if (fbText) fbText.textContent = `📘 Ghé Thăm Fanpage: ${pageName}`;
+          if (fbWrap) fbWrap.style.display = 'block';
+        } else {
+          if (fbWrap) fbWrap.style.display = 'none';
+        }
+
+        const tagEl = document.getElementById('channelTag');
+        const secTitleEl = document.getElementById('sectionTitleText');
+        if (tagEl) tagEl.textContent = '✨ Kênh Review Sản Phẩm';
+        if (secTitleEl) secTitleEl.textContent = '🛍️ Sản Phẩm Đã Review';
+
+      } else {
+        document.getElementById('storeName').textContent = 'Tiệm Rinh Đồ';
+        document.title = 'Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn';
+        document.getElementById('storeTagline').textContent = 'Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online. 👇🛒';
+        document.getElementById('channelTag').textContent = '🛍️ Hệ Thống Khám Phá Deal & Review';
+        document.getElementById('sectionTitleText').textContent = '🛍️ Sản Phẩm & Deal Nổi Bật';
+        document.getElementById('channelAvatar').src = DEFAULT_MASCOT;
+        document.getElementById('socialBtnWrap').style.display = 'none';
+        const footerName = document.getElementById('footerStoreName');
+        if (footerName) footerName.textContent = 'Tiệm Rinh Đồ';
+      }
+
+      if (ch.themeColor) {
+        applyThemeHex(ch.themeColor);
+      }
+      channelInfoLoaded = true;
+    }
+
     // ========================================================
-    // 3. SERVER-SIDE FETCH: LẤY DỮ LIỆU ĐÃ PHÂN TRANG
+    // 3. SERVER-SIDE & STATIC FETCH: LẤY DỮ LIỆU ĐÃ PHÂN TRANG
     // ========================================================
     async function fetchServerSideProducts(isAppend = false) {
       if (isLoading) return;
@@ -969,6 +1047,72 @@
       }
 
       try {
+        // 1. Ưu tiên nạp từ Static JSON trước (tốc độ < 50ms)
+        if (!staticChannelData && !hasAttemptedStaticFetch && channelKey) {
+          hasAttemptedStaticFetch = true;
+          try {
+            const staticRes = await fetch(`./data/${encodeURIComponent(channelKey)}.json`, {
+              signal: AbortSignal.timeout(3000)
+            });
+            if (staticRes.ok) {
+              staticChannelData = await staticRes.json();
+              console.log(`[LandingPage] ⚡ Đã nạp ${staticChannelData.products?.length || 0} món từ Static JSON!`);
+            }
+          } catch (e) {
+            console.log('[LandingPage] Static JSON chưa sẵn sàng, dùng Apps Script:', e.message);
+          }
+        }
+
+        // --- NHÁNH A: DÙNG DỮ LIỆU TĨNH LOCAL (INSTANT CLIENT-SIDE FILTER & PAGINATION) ---
+        if (staticChannelData && Array.isArray(staticChannelData.products)) {
+          applyChannelMetadata(staticChannelData.channel || {});
+
+          if (!document.getElementById('categoryPills').hasAttribute('data-rendered')) {
+            if (staticChannelData.categories && staticChannelData.categories.length > 0) {
+              renderCategoryPills(staticChannelData.categories);
+            }
+          }
+
+          const allProducts = staticChannelData.products;
+          const filteredList = allProducts.filter(item => {
+            const matchCat = (currentCat === 'all' || !currentCat) || (item.category === currentCat);
+            let matchKw = true;
+            if (currentKeyword) {
+              const normTitle = removeVietnameseTones(item.title);
+              const normCat = removeVietnameseTones(item.categoryName || '');
+              const normKw = removeVietnameseTones(currentKeyword);
+              matchKw = normTitle.includes(normKw) || normCat.includes(normKw);
+            }
+            return matchCat && matchKw;
+          });
+
+          totalItems = filteredList.length;
+          const offset = (currentPage - 1) * PAGE_LIMIT;
+          const incomingItems = filteredList.slice(offset, offset + PAGE_LIMIT);
+          hasMore = (offset + incomingItems.length) < totalItems;
+
+          if (isAppend) {
+            loadedProducts = loadedProducts.concat(incomingItems);
+          } else {
+            loadedProducts = incomingItems;
+          }
+
+          renderProductsDOM(incomingItems, isAppend);
+          badge.textContent = `${totalItems} sản phẩm`;
+
+          if (hasMore) {
+            loadMoreSec.style.display = 'flex';
+            const remaining = totalItems - loadedProducts.length;
+            loadMoreBtn.disabled = false;
+            loadMoreBtn.innerHTML = `<span>👇 Xem thêm sản phẩm (+${Math.min(remaining, PAGE_LIMIT)})</span>`;
+            progressText.textContent = `Đang hiển thị ${loadedProducts.length} / ${totalItems} sản phẩm`;
+          } else {
+            loadMoreSec.style.display = 'none';
+          }
+          return;
+        }
+
+        // --- NHÁNH B: FALLBACK SANG GOOGLE APPS SCRIPT WEB APP API ---
         const queryParams = new URLSearchParams({
           page: currentPage.toString(),
           limit: PAGE_LIMIT.toString()
@@ -977,7 +1121,6 @@
         if (channelKey) {
           queryParams.set('sheet', channelKey);
         }
-
         if (currentCat && currentCat !== 'all') {
           queryParams.set('category', currentCat);
         }
@@ -993,70 +1136,7 @@
         const json = await res.json();
 
         // 1. Áp dụng cấu hình Kênh & Màu sắc lần đầu
-        if (!channelInfoLoaded) {
-          const rawKey = urlParams.get('c') || urlParams.get('shop') || urlParams.get('channel') || '';
-          const hasChannel = Boolean(rawKey && rawKey.toLowerCase() !== 'tiemrinhdo');
-          const DEFAULT_MASCOT = './logo.png';
-
-          if (hasChannel) {
-            const ch = json.channel || {};
-            let pageName = ch.name;
-            if (!pageName || (rawKey.toLowerCase() !== 'anlanghien' && pageName === 'Ăn Là Nghiền')) {
-              pageName = rawKey.toUpperCase();
-            }
-
-            document.getElementById('storeName').textContent = pageName;
-            document.title = `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`;
-            const footerName = document.getElementById('footerStoreName');
-            if (footerName) footerName.textContent = pageName;
-
-            if (ch.bio && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
-              document.getElementById('storeTagline').textContent = ch.bio;
-            } else {
-              document.getElementById('storeTagline').textContent = 'Tất cả sản phẩm xuất hiện trong các video review của kênh đều ở đây hết nha! 👇🛒';
-            }
-
-            const avatarEl = document.getElementById('channelAvatar');
-            if (ch.avatarUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
-              avatarEl.src = ch.avatarUrl;
-            } else {
-              avatarEl.src = DEFAULT_MASCOT;
-            }
-
-            const fbWrap = document.getElementById('socialBtnWrap');
-            const fbLink = document.getElementById('fbLink');
-            const fbText = document.getElementById('fbLinkText');
-            if (ch.facebookUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
-              if (fbLink) fbLink.href = ch.facebookUrl;
-              if (fbText) fbText.textContent = `📘 Ghé Thăm Fanpage: ${pageName}`;
-              if (fbWrap) fbWrap.style.display = 'block';
-            } else {
-              if (fbWrap) fbWrap.style.display = 'none';
-            }
-
-            const tagEl = document.getElementById('channelTag');
-            const secTitleEl = document.getElementById('sectionTitleText');
-            if (tagEl) tagEl.textContent = '✨ Kênh Review Sản Phẩm';
-            if (secTitleEl) secTitleEl.textContent = '🛍️ Sản Phẩm Đã Review';
-
-          } else {
-            // Khi vào trang gốc không có ?c= -> Giữ nguyên 100% thương hiệu chung "Tiệm Rinh Đồ"
-            document.getElementById('storeName').textContent = 'Tiệm Rinh Đồ';
-            document.title = 'Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn';
-            document.getElementById('storeTagline').textContent = 'Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online. 👇🛒';
-            document.getElementById('channelTag').textContent = '🛍️ Hệ Thống Khám Phá Deal & Review';
-            document.getElementById('sectionTitleText').textContent = '🛍️ Sản Phẩm & Deal Nổi Bật';
-            document.getElementById('channelAvatar').src = DEFAULT_MASCOT;
-            document.getElementById('socialBtnWrap').style.display = 'none';
-            const footerName = document.getElementById('footerStoreName');
-            if (footerName) footerName.textContent = 'Tiệm Rinh Đồ';
-          }
-
-          if (json.channel && json.channel.themeColor) {
-            applyThemeHex(json.channel.themeColor);
-          }
-          channelInfoLoaded = true;
-        }
+        applyChannelMetadata(json.channel || {});
 
         // 2. Render danh mục Category Pills (lần đầu)
         if (!document.getElementById('categoryPills').hasAttribute('data-rendered')) {
@@ -1239,7 +1319,7 @@
     });
 
     // ========================================================
-    // 6. TẢI DANH SÁCH KÊNH HỆ THỐNG TỪ SHEET tiemrinhdo
+    // 6. TẢI DANH SÁCH KÊNH HỆ THỐNG TỪ STATIC JSON / SHEET tiemrinhdo
     // ========================================================
     async function fetchChannelsForHomepage() {
       const container = document.getElementById('channelsContainer');
@@ -1247,13 +1327,28 @@
       if (!container || !listEl) return;
 
       try {
-        const res = await fetch(`${APPS_SCRIPT_URL}?sheet=tiemrinhdo`, {
-          signal: AbortSignal.timeout(8000)
-        });
-        if (!res.ok) return;
-        const json = await res.json();
+        let json = null;
 
-        if (json.channels && Array.isArray(json.channels) && json.channels.length > 0) {
+        // 1. Ưu tiên nạp từ file static JSON cục bộ (tốc độ < 30ms)
+        try {
+          const staticRes = await fetch('./data/tiemrinhdo.json', { signal: AbortSignal.timeout(2500) });
+          if (staticRes.ok) {
+            json = await staticRes.json();
+            console.log('[LandingPage] ⚡ Đã nạp danh sách kênh từ Static JSON tiemrinhdo.json');
+          }
+        } catch (e) {
+          // ignore, fallback sang Apps Script
+        }
+
+        // 2. Fallback sang Google Apps Script nếu file static chưa có
+        if (!json || !json.channels) {
+          const res = await fetch(`${APPS_SCRIPT_URL}?sheet=tiemrinhdo`, {
+            signal: AbortSignal.timeout(8000)
+          });
+          if (res.ok) json = await res.json();
+        }
+
+        if (json && json.channels && Array.isArray(json.channels) && json.channels.length > 0) {
           listEl.innerHTML = json.channels.map(c => `
             <a href="?c=${encodeURIComponent(c.slug || '')}" class="channel-entry-card">
               <img 
@@ -1275,7 +1370,7 @@
           container.style.display = 'block';
         }
       } catch (err) {
-        console.warn('Lỗi tải danh sách kênh từ sheet tiemrinhdo:', err.message);
+        console.warn('Lỗi tải danh sách kênh:', err.message);
       }
     }
 
