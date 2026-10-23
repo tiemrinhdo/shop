@@ -12,7 +12,7 @@
     {
       "slug": "hai-san-kho",
       "name": "🦐 Hải Sản Khô & Rim",
-      "count": 4
+      "count": 6
     },
     {
       "slug": "muoi-cham",
@@ -22,7 +22,7 @@
     {
       "slug": "hai-san-tuoi",
       "name": "🦞 Hải Sản Tươi & Cấp Đông",
-      "count": 2
+      "count": 3
     },
     {
       "slug": "mon-nhau-bien",
@@ -101,7 +101,40 @@
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqr4j90r0zr438",
       "affiliateUrl": "https://s.shopee.vn/3VlCOmmCbT?lp=aff",
       "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Mì Trộn Gà Cay Hàn Quốc Và Mì Gà Cay Tokbokki Sốt Kem Haidilao – Tiện...",
+      "category": "hai-san-tuoi",
+      "categoryName": "🦞 Hải Sản Tươi & Cấp Đông",
+      "price": "59.000đ",
+      "sold": "19.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtrf61246k9410",
+      "affiliateUrl": "https://s.shopee.vn/30ovnro6cO?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Khô bò sợi Tasty Food - Hũ vuông 500g",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "16.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwo3wm4a5bdlc9",
+      "affiliateUrl": "https://s.shopee.vn/3B8M0AnTHR?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "ghienhaisan",
+      "title": "Combo 20 chân gà rút xương tê cay - ĂN CÙNG BÀ TUYẾT M28",
+      "category": "hai-san-kho",
+      "categoryName": "🦐 Hải Sản Khô & Rim",
+      "price": "59.000đ",
+      "sold": "18.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo57bqj5k54y41",
+      "affiliateUrl": "https://s.shopee.vn/2VsgKXxifg?lp=aff",
+      "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-22T06:29:24.981Z"
+  "updatedAt": "2026-10-23T02:11:10.015Z"
 }

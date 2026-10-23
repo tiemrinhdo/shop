@@ -2,7 +2,7 @@
   "success": true,
   "sheet": "tiemrinhdo",
   "type": "channels_list",
-  "count": 3,
+  "count": 4,
   "channels": [
     {
       "name": "Ăn Là Nghiền",
@@ -27,7 +27,15 @@
       "avatarUrl": "https://graph.facebook.com/1404382612752352/picture?type=large",
       "facebookUrl": "https://www.facebook.com/1404382612752352",
       "badge": "✨ Kênh Mới"
+    },
+    {
+      "name": "Tiệm Ăn Vặt",
+      "slug": "tiemanvat",
+      "description": "Kênh review ẩm thực, món ăn vặt đường phố và gia vị nấu ăn thần thánh. Đầy đủ giỏ hàng Shopee cho các tín đồ mê ăn uống! - Ghé giỏ hàng: https://tiemrinhdo.github.io/shop/?c=tiemanvat",
+      "avatarUrl": "https://graph.facebook.com/1465868573257922/picture?type=large",
+      "facebookUrl": "https://www.facebook.com/1465868573257922",
+      "badge": "✨ Kênh Mới"
     }
   ],
-  "updatedAt": "2026-10-22T06:29:20.267Z"
+  "updatedAt": "2026-10-23T02:11:06.675Z"
 }

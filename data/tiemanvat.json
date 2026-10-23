@@ -1,0 +1,284 @@
+{
+  "success": true,
+  "sheet": "tiemanvat",
+  "channel": {
+    "name": "Tiệm Ăn Vặt",
+    "facebookUrl": "https://www.facebook.com/1465868573257922",
+    "avatarUrl": "https://graph.facebook.com/1465868573257922/picture?type=large",
+    "bio": "Kênh review ẩm thực, món ăn vặt đường phố và gia vị nấu ăn thần thánh. Đầy đủ giỏ hàng Shopee cho các tín đồ mê ăn uống! - Ghé giỏ hàng: https://tiemrinhdo.github.io/shop/?c=tiemanvat",
+    "themeColor": "#EA580C"
+  },
+  "categories": [
+    {
+      "slug": "an-vat",
+      "name": "🍿 Bánh & Đồ Ăn Vặt",
+      "count": 18
+    },
+    {
+      "slug": "gia-vi",
+      "name": "🌶️ Gia Vị & Nước Xốt",
+      "count": 3
+    },
+    {
+      "slug": "mon-nhau",
+      "name": "🥩 Đồ Khô & Món Nhậu",
+      "count": 2
+    }
+  ],
+  "products": [
+    {
+      "sheet": "tiemanvat",
+      "title": "Thùng Bánh Bông Lan Đài Loan Mix Vị 1KG - đồ ăn vặt nội địa Đài Loan...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "3.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsvib0wcec2h27",
+      "affiliateUrl": "https://s.shopee.vn/9APc0ELYta?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Quý Châu Khoai Tây Chiên Cay Xẻng Khoai Tây Tuân Thủ Khoai Tây Đặc...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "18.3k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-823pu-mp52br1yc1e55e",
+      "affiliateUrl": "https://s.shopee.vn/9pfInSJ1Xm?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[TẶNG GIẤY NẾN] Set làm bánh Chocochip Cookie - nguyên liệu làm bánh...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "11.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3cjilm2kuyk21",
+      "affiliateUrl": "https://s.shopee.vn/2gC8GJTTt0?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[Tặng Túi đựng&Giấy nến] Set Làm Bánh Cookie Socola Chip ít ngọt...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "16.3k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mrtma1paton5ba",
+      "affiliateUrl": "https://s.shopee.vn/2qVYScSqY3?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Miễn Phí Vận Chuyển Trên 12 Túi Trứng Trà Gia Vị Đặc Biệt Bắc-Nam Gói...",
+      "category": "gia-vi",
+      "categoryName": "🌶️ Gia Vị & Nước Xốt",
+      "price": "45.000đ",
+      "sold": "10.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-82580-msfkq21lkem9fd",
+      "affiliateUrl": "https://s.shopee.vn/2Vsi40U7E1?lp=aff",
+      "badge": "⭐ Đánh giá 5.0"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[ ĐỒ ĂN VẶT NỘI ĐỊA TRUNG ] 10 Túi Chân Gà Ngâm -  Mix 2 Vị Chân Gà...",
+      "category": "gia-vi",
+      "categoryName": "🌶️ Gia Vị & Nước Xốt",
+      "price": "45.000đ",
+      "sold": "16.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqwwm0oj09097b",
+      "affiliateUrl": "https://s.shopee.vn/20wRT5W1Ew?lp=aff",
+      "badge": "⭐ Đánh giá 5.0"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[Hỏa Tốc HN] Bánh Tiểu Long GN / Hi-Foods (Gói 900g) - Bánh Bao Thịt...",
+      "category": "mon-nhau",
+      "categoryName": "🥩 Đồ Khô & Món Nhậu",
+      "price": "115.000đ",
+      "sold": "11.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtqffjxpxzpk9f",
+      "affiliateUrl": "https://s.shopee.vn/AUuzajT5lc?lp=aff",
+      "badge": "🔥 Món nhậu bén"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[Xinke Liminus] Bánh Lá Tre Tứ Xuyên Yibin Đặc Biệt Sáp Mềm Truyền...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "18.3k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-82591-msfudbr8jc3re7",
+      "affiliateUrl": "https://s.shopee.vn/AKbZOQTj6b?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Bánh Quy Oreo Cuộn Socola Lava Nhân Mềm – Giòn Xốp, Vị Cacao Đậm Đà...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "17.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjjbixjsne9y3d",
+      "affiliateUrl": "https://s.shopee.vn/20wRT8GzOe?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "5 tuýt kẹo lỏng Sour Jam Liquid Candy dạng tuýt halloween",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "18.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mewvnerm0c8zc6",
+      "affiliateUrl": "https://s.shopee.vn/5VWJdb6ufy?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Kẹo Dẻo Chua Ướt",
+      "category": "gia-vi",
+      "categoryName": "🌶️ Gia Vị & Nước Xốt",
+      "price": "45.000đ",
+      "sold": "1.6k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mh8tdlkjt1jd04",
+      "affiliateUrl": "https://s.shopee.vn/5LCtRI7Y0x?lp=aff",
+      "badge": "⭐ Đánh giá 5.0"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Chuối Sấy Thăng Hoa Chuối Sấy Giòn Nguyên Quả Phủ Socola Đen/Trắng Yi...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "14.2k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mmsinh8ma5fp58",
+      "affiliateUrl": "https://s.shopee.vn/6VOqpR36eC?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Bánh bông lan nhân táo tàu handmade, bánh đỏ đường nâu, bánh mì chính...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "5.1k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-823pj-mp9qfqhr2ia7ba",
+      "affiliateUrl": "https://s.shopee.vn/6L5Qd83jzB?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Bánh tai đường mật ma hoa Bắc Kinh đặc sản Hộ Quốc Tự Halal lâu đời |...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "7.3k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-825ab-mtv5apfd32f66e",
+      "affiliateUrl": "https://s.shopee.vn/6Am0Qp4NKA?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Hạt Nổ Củ Năng Lotus (Đủ vị) - Hạt Nổ Củ Năng Trắng - Hạt Nổ Củ Năng...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "7.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjh9jkozvt3524",
+      "affiliateUrl": "https://s.shopee.vn/8fTLPSFm1V?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Lạp Xưởng Mini Vị Ngọt Kiểu Trung Hoa – Chuẩn Vị Quảng Đông",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "3.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo5hytvwngn63e",
+      "affiliateUrl": "https://s.shopee.vn/906Bo4EVLb?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Bánh vàng đặc sản Tứ Xuyên gạo nếp bánh lá tre thủ công truyền thống...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "13.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6cq6ikv4ddk1f",
+      "affiliateUrl": "https://s.shopee.vn/9V2SOzCbKi?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Trà Đen Kẹo Trà Ô Long Kẹo Đá Trà Xanh Trà chanh Hỗn Hợp Kẹo Cứng...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "5.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-825b3-msiohye6gow183",
+      "affiliateUrl": "https://s.shopee.vn/70L7Rpza5T?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[TRÁI ĐẤT] Kẹo Dẻo Có Nhân Hình Con Mắt/ Dưa Hấu/ Dâu / Vịt/ Đào/ Gấu...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "3.1k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mbxewty6m0gl7c",
+      "affiliateUrl": "https://s.shopee.vn/7VHO2kxg4a?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Rong biển và thịt xé sợi đóng hộp328g Đồ ăn vặt văn phòng sang trọng...",
+      "category": "mon-nhau",
+      "categoryName": "🥩 Đồ Khô & Món Nhậu",
+      "price": "115.000đ",
+      "sold": "13.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-820oc-mny4p6ojgyyrc0",
+      "affiliateUrl": "https://s.shopee.vn/7KxxqRyJPZ?lp=aff",
+      "badge": "🔥 Món nhậu bén"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Pate Gan Ngỗng 220g - Pâté Canard Ngỗng Pháp Cao Cấp, Thơm Béo Đậm Đà...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "12.2k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mpylk6kpz8r1f7",
+      "affiliateUrl": "https://s.shopee.vn/7puERMwPOg?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[SHIP HCM] Thanh surimi hương cua - Thanh cua cuộn kimbap, thả lấu,...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "11.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmzu64bud49ke2",
+      "affiliateUrl": "https://s.shopee.vn/7faoF3x2jf?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "[Hỏa Tốc HN] Bánh Tiểu Long Bao Hi-Foods (Gói 900g / 30 Cái) - Nhân...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "3.1k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtqffls3flzef0",
+      "affiliateUrl": "https://s.shopee.vn/6Am0SKB0m3?lp=aff",
+      "badge": "🔥 Bán chạy"
+    }
+  ],
+  "updatedAt": "2026-10-23T02:11:14.975Z"
+}

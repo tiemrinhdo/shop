@@ -12,22 +12,22 @@
     {
       "slug": "mi-nau-lien",
       "name": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "count": 12
+      "count": 19
     },
     {
       "slug": "tra-do-uong",
       "name": "🥤 Trà & Đồ Uống",
-      "count": 2
+      "count": 4
     },
     {
       "slug": "do-an-vat",
       "name": "🍡 Ăn Vặt Hot Trend",
-      "count": 12
+      "count": 15
     },
     {
       "slug": "do-bep-nau",
       "name": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "count": 25
+      "count": 2
     }
   ],
   "products": [
@@ -77,17 +77,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/1W09NRfLWd?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Bơ Sáp Dẻo Đắk Lắk Tuyển Chọn Size 2-3 Trái/Kg Béo Ngậy Không Xơ, Bơ...",
       "category": "mi-nau-lien",
       "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
@@ -99,39 +88,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/6q1fjHbLuS?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/6fiFWybzFR?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/7AeW7ta5EY?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "[Nova] Sôcôla Truffle Vàng Sôcôla Ca Cao Nguyên Chất 255g Bốn Vị Kẹo...",
       "category": "do-an-vat",
       "categoryName": "🍡 Ăn Vặt Hot Trend",
@@ -139,28 +95,6 @@
       "sold": "18.1k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-825au-mru0vkkxep6u8f",
       "affiliateUrl": "https://s.shopee.vn/70L5vaaiZX?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/7VHMWVYoYe?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/80Dd7RwlfW?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -187,17 +121,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9APaVasKIn?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Chân Gà CÓ XƯƠNG GleeGlee DA HỔ VỊ SA TẾ 300g Cay Nồng Đậm Vị Chiên...",
       "category": "do-an-vat",
       "categoryName": "🍡 Ăn Vặt Hot Trend",
@@ -205,17 +128,6 @@
       "sold": "16.3k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mszbxqt1fdoh5e",
       "affiliateUrl": "https://s.shopee.vn/8fTJufuEJi?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Ba Sóc Mì Ốc Liễu Châu g / Túi Authentic Liễu Châu Đặc Biệt Mì Ốc Ký...",
-      "category": "mi-nau-lien",
-      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "price": "59.000đ",
-      "sold": "1.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/2gC6lhtni1?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -231,61 +143,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Ba Sóc Mì Ốc Liễu Châu g / Túi Authentic Liễu Châu Đặc Biệt Mì Ốc Ký...",
-      "category": "mi-nau-lien",
-      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "price": "59.000đ",
-      "sold": "1.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/30oxAJsX27?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/4qGbLglYJU?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/4fxB9NmBeT?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Cổ Vịt Cay Tứ Xuyên Dacheng | Ăn Vặt TIỂU ĐỒNG",
-      "category": "do-an-vat",
-      "categoryName": "🍡 Ăn Vặt Hot Trend",
-      "price": "59.000đ",
-      "sold": "5.5k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgxx876jhxrmc2",
-      "affiliateUrl": "https://s.shopee.vn/8AX3Jqkyl8?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/80Dd7Xlc67?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Túi lớn 100 gói nhỏ ăn vặt cay nhẹ Ba con sóc C05",
       "category": "do-an-vat",
       "categoryName": "🍡 Ăn Vặt Hot Trend",
@@ -293,39 +150,6 @@
       "sold": "15.9k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lq76s7g485aq4c",
       "affiliateUrl": "https://s.shopee.vn/9APaVghAjM?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/906AJNho4L?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/8pmk74iRPK?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Ba Sóc Mì Ốc Liễu Châu g / Túi Authentic Liễu Châu Đặc Biệt Mì Ốc Ký...",
-      "category": "mi-nau-lien",
-      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "price": "59.000đ",
-      "sold": "1.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/8fTJunDXS4?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -341,50 +165,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/906AJPCGmA?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9APaViBdRD?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/80Dd7ZG4o0?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/7puCvHlF6a?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Sầu Riêng Sấy Thăng Hoa - Bình Minh Farm Đắk Lắk |Sầu Riêng Sấy Khô,...",
       "category": "do-bep-nau",
       "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
@@ -392,50 +172,6 @@
       "sold": "10.8k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mre9jul7dddx15",
       "affiliateUrl": "https://s.shopee.vn/7famiylsRZ?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Ba Sóc Mì Ốc Liễu Châu g / Túi Authentic Liễu Châu Đặc Biệt Mì Ốc Ký...",
-      "category": "mi-nau-lien",
-      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "price": "59.000đ",
-      "sold": "1.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/7VHMWfmVmY?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Ba Sóc Mì Ốc Liễu Châu g / Túi Authentic Liễu Châu Đặc Biệt Mì Ốc Ký...",
-      "category": "mi-nau-lien",
-      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "price": "59.000đ",
-      "sold": "1.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/7KxwKMn97X?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/8V9tiVihkm?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9zyhVHzpHG?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -462,17 +198,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9pfHIz0ScH?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Tổng Hợp Set Ăn Vặt Trung Ngon Hot - Ăn Vặt 492",
       "category": "mi-nau-lien",
       "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
@@ -495,17 +220,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/AKbXtvxPCU?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "Que Cay Ăn Vặt Trung Quốc Đồ Ăn Vặt Tăm Cay",
       "category": "do-an-vat",
       "categoryName": "🍡 Ăn Vặt Hot Trend",
@@ -517,28 +231,6 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9Kj0i61DEK?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9V2QuP0ZtN?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
       "title": "KẸO DẺO TRÁI CÂY MIX TRÊN 40 VỊ KHÁC NHAU",
       "category": "do-an-vat",
       "categoryName": "🍡 Ăn Vặt Hot Trend",
@@ -546,17 +238,6 @@
       "sold": "11.2k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7jsmcc9r9q4ad",
       "affiliateUrl": "https://s.shopee.vn/9zyhVLNqNe?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "meamthuc",
-      "title": "Máy Làm đá Mini 2.2L Công Suất Lớn Hoàntoàn Tự động 15kg đá Tạo đá...",
-      "category": "do-bep-nau",
-      "categoryName": "🍲 Đồ Bếp & Tiện Ích Ăn Uống",
-      "price": "59.000đ",
-      "sold": "4.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/AAI7heND2h?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -583,15 +264,213 @@
     },
     {
       "sheet": "meamthuc",
-      "title": "Hạt sen tươi 1KG",
+      "title": "lựu hạt mềm",
       "category": "mi-nau-lien",
       "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
       "price": "59.000đ",
-      "sold": "18.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6oh2s11ydyw2e",
-      "affiliateUrl": "https://s.shopee.vn/3g4dyeF7Ew",
+      "sold": "7.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-md6abo5i7cyk10",
+      "affiliateUrl": "https://s.shopee.vn/5fpjrPCumy?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Có Mũ Trùm Đầu Chăn Búp Bê Mũ Văn Phòng Sinh Viên Ngủ Chăn Di Động...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "13.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/cn-11134207-7ras8-m4rams4ozapj98",
+      "affiliateUrl": "https://s.shopee.vn/5q9A3iCHS1?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "IPhone 17 Pro Max Phim hoạt hình dễ thương Cinnamoroll Vô hình H9 Bảo...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "17.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/cn-11134207-820l4-mftklfv2yosr50",
+      "affiliateUrl": "https://s.shopee.vn/5LCtSnEBSw?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Nhộng tằm sấy khô loại 1 - dry silkworm the best",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "1.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/25d688145b8317bd5735faed6fe96f1d",
+      "affiliateUrl": "https://s.shopee.vn/30oygWiBES?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Mì enaak ăn liền siêu ngon",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "12.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/3f366285343fd25885edb928af25c60c",
+      "affiliateUrl": "https://s.shopee.vn/3B8OsphXtV?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Đồ Ăn Vặt Trung Quốc Cay Tổng Hợp 50 Món Tự Chọn Shop Nội Địa |...",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "11.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhko5yyfaf0l36",
+      "affiliateUrl": "https://s.shopee.vn/2gC8HujRuQ?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Bún Ốc Liễu Châu Luosifen SunjieLuo Mì Ốc Trung Quốc Vị Cay Tê Đậm Đà...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "13.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8258s-mqgxuiyjq8e887",
+      "affiliateUrl": "https://s.shopee.vn/2qVYUDioZT?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Trái Khế Chua Tươi Giòn Ngon | Khế Chua Miền Nam | Khế Tươi Ăn Sống,...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "11.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134201-81ztc-mssxvsocan7p48",
+      "affiliateUrl": "https://s.shopee.vn/2LZHtIkiaO?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Ốp lưng IMD họa tiết lưới kim cương &#43; Giá đỡ điện thoại &#43; Dây xích...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "12.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8259i-mr9xnmnj8qo5e1",
+      "affiliateUrl": "https://s.shopee.vn/2LZHtK7YAw?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Mì gà cay Samyang - Mì tương đen chacharoni - Mì cay khô Hàn Quốc...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "11.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134201-7ra0g-m99pqzevqj44a0",
+      "affiliateUrl": "https://s.shopee.vn/2Vsi5d6upz?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "1kg Việt Quất sấy khô ngon hương vị tự nhiên dùng làm bánh hãm nước...",
+      "category": "tra-do-uong",
+      "categoryName": "🥤 Trà & Đồ Uống",
+      "price": "59.000đ",
+      "sold": "1.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mp88ritawpov73",
+      "affiliateUrl": "https://s.shopee.vn/1BN72GQuW?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Mì Cay Samyang Hàn Quốc gói 140g",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "1.7k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6c8d84hb90710",
+      "affiliateUrl": "https://s.shopee.vn/BUnJLFnZZ?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Bánh Oreo kẹp kem nhiều vị - Nội Địa Trung",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "16.6k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-meoyq77b7zsz43",
+      "affiliateUrl": "https://s.shopee.vn/LoDVeFAEc?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Kẹo sữa thỏ trắng vị sữa, vị sữa chua, vị socola 114gram",
+      "category": "tra-do-uong",
+      "categoryName": "🥤 Trà & Đồ Uống",
+      "price": "59.000đ",
+      "sold": "5.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m70emif98ks817",
+      "affiliateUrl": "https://s.shopee.vn/1W0AtonusF?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "2026 Bộ sưu tập sơn móng tay gel nhũ mắt mèo màu nude gradient mới...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "14.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mogjgcoso93daa",
+      "affiliateUrl": "https://s.shopee.vn/2LZHtLkkBQ?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Măng Cay Tứ Xuyên Yuyu Ngâm Ớt Xanh Ăn vặt Nội Địa Trung Tiểu Đồng...",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "15.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgiwugxbpx4nb3",
+      "affiliateUrl": "https://s.shopee.vn/2Vsi5ek6qT?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Set 10 Con khô mực size 90-100 con/kg nướng rim me nấu mì chiên NEO...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "14.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mdia1onteht894",
+      "affiliateUrl": "https://s.shopee.vn/20wRUjm0rO?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "500gr quả hồng táo, quả táo tàu tươi giòn ngọt tốt cho sk",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "2.2k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mco76fzl5l0c40",
+      "affiliateUrl": "https://s.shopee.vn/2BFrh2lNWR?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Set Bánh Trôi Tàu Bắc - Nhân Mè Đen/Đậu Xanh – Nấu Nhanh 5 Phút (30...",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "15.6k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mrv2qsbg2ayte9",
+      "affiliateUrl": "https://s.shopee.vn/4fxCffDTPq",
       "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-22T06:29:28.833Z"
+  "updatedAt": "2026-10-23T02:11:13.242Z"
 }

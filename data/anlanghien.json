@@ -12,27 +12,27 @@
     {
       "slug": "an-vat",
       "name": "🍿 Bánh & Đồ Ăn Vặt",
-      "count": 20
+      "count": 17
     },
     {
       "slug": "mon-nhau",
       "name": "🥩 Đồ Khô & Món Nhậu",
-      "count": 14
+      "count": 9
     },
     {
       "slug": "gia-vi",
       "name": "🌶️ Gia Vị & Nước Xốt",
-      "count": 9
+      "count": 5
     },
     {
       "slug": "trai-cay",
       "name": "🥭 Hoa Quả & Trái Cây",
-      "count": 6
+      "count": 3
     },
     {
       "slug": "healthy",
       "name": "🥗 Thực Dưỡng & Ăn Kiêng",
-      "count": 3
+      "count": 1
     }
   ],
   "products": [
@@ -214,17 +214,6 @@
     },
     {
       "sheet": "anlanghien",
-      "title": "Mì Trộn Gà Cay Hàn Quốc Và Mì Gà Cay Tokbokki Sốt Kem Haidilao – Tiện...",
-      "category": "mon-nhau",
-      "categoryName": "🥩 Đồ Khô & Món Nhậu",
-      "price": "59.000đ",
-      "sold": "19.0k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtrf61246k9410",
-      "affiliateUrl": "https://s.shopee.vn/30ovnro6cO?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
       "title": "Khô bò sợi Tasty Food - Hũ vuông 500g",
       "category": "mon-nhau",
       "categoryName": "🥩 Đồ Khô & Món Nhậu",
@@ -243,17 +232,6 @@
       "sold": "18.4k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo57bqj5k54y41",
       "affiliateUrl": "https://s.shopee.vn/2VsgKXxifg?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Tôm Khô Cà Mau Loại 1 Thả Vuông Tự Nhiên Đủ Size Ngon Ngọt - Chất...",
-      "category": "an-vat",
-      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
-      "price": "59.000đ",
-      "sold": "1.6k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwpuozwdbg0p17",
-      "affiliateUrl": "https://s.shopee.vn/2LZG8EyM0f?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -280,17 +258,6 @@
     },
     {
       "sheet": "anlanghien",
-      "title": "Nhộng Tằm Sấy Cay Giòn - Món Nhậu Ăn Liền - Hoa Mặt Trời Farm |...",
-      "category": "trai-cay",
-      "categoryName": "🥭 Hoa Quả & Trái Cây",
-      "price": "59.000đ",
-      "sold": "15.2k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7q9gk8yo9kzd8",
-      "affiliateUrl": "https://s.shopee.vn/1qczXK0G1c?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
       "title": "(date mới)Bún Ốc  bà Tôn 320g- bún ốc liễu châu- bún ốc lý tử thất |...",
       "category": "an-vat",
       "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
@@ -298,17 +265,6 @@
       "sold": "10.9k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-ms8munae2n7o8d",
       "affiliateUrl": "https://s.shopee.vn/6fiFIIfmGE?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Combo 20 chân gà rút xương tê cay - ĂN CÙNG BÀ TUYẾT M28",
-      "category": "mon-nhau",
-      "categoryName": "🥩 Đồ Khô & Món Nhậu",
-      "price": "59.000đ",
-      "sold": "18.4k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo57bqj5k54y41",
-      "affiliateUrl": "https://s.shopee.vn/6q1fUbf8vH?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -335,39 +291,6 @@
     },
     {
       "sheet": "anlanghien",
-      "title": "Bánh tráng cuốn gạo lứt rau củ ngũ sắc healthy ONFOD ăn kiêng...",
-      "category": "healthy",
-      "categoryName": "🥗 Thực Dưỡng & Ăn Kiêng",
-      "price": "59.000đ",
-      "sold": "5.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mr5ryyyzvri85d",
-      "affiliateUrl": "https://s.shopee.vn/60SYV4iJcA?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "[Loại thượng hạng] Sốt trộn cơm mì nước sốt chấm, ăn liền thơm ngon...",
-      "category": "gia-vi",
-      "categoryName": "🌶️ Gia Vị & Nước Xốt",
-      "price": "59.000đ",
-      "sold": "13.4k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf6gtvgtaamvca",
-      "affiliateUrl": "https://s.shopee.vn/5q98IpPSam?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Sầu Riêng Cấp Đông (Tách múi) Quà Không Áp Dụng Cộng Dồn - Foodmap...",
-      "category": "trai-cay",
-      "categoryName": "🥭 Hoa Quả & Trái Cây",
-      "price": "59.000đ",
-      "sold": "7.1k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqr4j90r0zr438",
-      "affiliateUrl": "https://s.shopee.vn/5fpi6WQ5vl?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
       "title": "Bánh pía chay đậu xanh sầu riêng mini 500g, bánh pía chay Tân Huê...",
       "category": "an-vat",
       "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
@@ -386,28 +309,6 @@
       "sold": "15.7k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mn7fypltk0ed6d",
       "affiliateUrl": "https://s.shopee.vn/5LCrhuRMbj?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "(Tặng 1 sp bất kì) Mua 20 gói NEM NƯỚNG PHÊN BÀ TUYẾT - ĂN CÙNG BÀ...",
-      "category": "mon-nhau",
-      "categoryName": "🥩 Đồ Khô & Món Nhậu",
-      "price": "59.000đ",
-      "sold": "9.5k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mohqrohgaya128",
-      "affiliateUrl": "https://s.shopee.vn/6VOp63MvEy?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "[Loại Đặc Biệt] Sốt trộn cơm mì nước sốt chấm, ăn liền thơm ngon loại...",
-      "category": "gia-vi",
-      "categoryName": "🌶️ Gia Vị & Nước Xốt",
-      "price": "59.000đ",
-      "sold": "6.1k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-ljzb42m5x7sk30",
-      "affiliateUrl": "https://s.shopee.vn/2VsgKkIEte?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -456,72 +357,6 @@
     },
     {
       "sheet": "anlanghien",
-      "title": "Mì Trộn Gà Cay Hàn Quốc Và Mì Gà Cay Tokbokki Sốt Kem Haidilao – Tiện...",
-      "category": "mon-nhau",
-      "categoryName": "🥩 Đồ Khô & Món Nhậu",
-      "price": "59.000đ",
-      "sold": "19.0k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtrf61246k9410",
-      "affiliateUrl": "https://s.shopee.vn/3VlDWdQcrt?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Sầu Riêng Cấp Đông (Tách múi) Quà Không Áp Dụng Cộng Dồn - Foodmap...",
-      "category": "trai-cay",
-      "categoryName": "🥭 Hoa Quả & Trái Cây",
-      "price": "59.000đ",
-      "sold": "7.1k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqr4j90r0zr438",
-      "affiliateUrl": "https://s.shopee.vn/3g4diwPzWw?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "[MUA 1 TẶNG 1][CHÍNH HÃNG] Bò Xuyên Tiêu Chef Hải - Thịt bò sấy dẻo -...",
-      "category": "mon-nhau",
-      "categoryName": "🥩 Đồ Khô & Món Nhậu",
-      "price": "59.000đ",
-      "sold": "1.6k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-muey9ere2j9f8f",
-      "affiliateUrl": "https://s.shopee.vn/3qO3vFPMBz?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Chân Giò, Giò Heo Hầm Cay Gói 20gr (có COMBO 3-5 gói)⭐Song.Thien.Shop✅...",
-      "category": "an-vat",
-      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
-      "price": "59.000đ",
-      "sold": "18.1k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1oblywnarf7d3",
-      "affiliateUrl": "https://s.shopee.vn/40hU7YOir2?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "[MỚI] Tôm Hùm Đất Chưng Ớt Hồ Nam – Cay Tê Chuẩn Vị Trung Hoa - Món...",
-      "category": "gia-vi",
-      "categoryName": "🌶️ Gia Vị & Nước Xốt",
-      "price": "59.000đ",
-      "sold": "18.4k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8227k-mhnhr5nmlmo20e",
-      "affiliateUrl": "https://s.shopee.vn/4B0uJrO5W5?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Bánh tráng cuốn gạo lứt rau củ ngũ sắc healthy ONFOD ăn kiêng...",
-      "category": "healthy",
-      "categoryName": "🥗 Thực Dưỡng & Ăn Kiêng",
-      "price": "59.000đ",
-      "sold": "5.7k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mr5ryyyzvri85d",
-      "affiliateUrl": "https://s.shopee.vn/6VOp6Ddv28?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
       "title": "Tôm tẩm sấy ăn liền - tôm sấy muối ớt ăn liền - Hình shop tự chụp |...",
       "category": "gia-vi",
       "categoryName": "🌶️ Gia Vị & Nước Xốt",
@@ -551,28 +386,6 @@
       "sold": "14.4k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134211-7ra0g-m8d7xwvck60ee1",
       "affiliateUrl": "https://s.shopee.vn/60SYVIfp35?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "[Loại Đặc Biệt] Sốt trộn cơm mì nước sốt chấm, ăn liền thơm ngon loại...",
-      "category": "gia-vi",
-      "categoryName": "🌶️ Gia Vị & Nước Xốt",
-      "price": "59.000đ",
-      "sold": "6.1k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-ljzb42m5x7sk30",
-      "affiliateUrl": "https://s.shopee.vn/5q98IzgSO4?lp=aff",
-      "badge": "🔥 Bán chạy"
-    },
-    {
-      "sheet": "anlanghien",
-      "title": "Bánh tráng cuốn gạo lứt (3 màu) Food For You 300g giảm cân eat clean...",
-      "category": "an-vat",
-      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
-      "price": "59.000đ",
-      "sold": "17.8k đã bán",
-      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mmy7xjcd6n7m70",
-      "affiliateUrl": "https://s.shopee.vn/3VlDWkRvHz?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -609,5 +422,5 @@
       "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-22T06:29:24.485Z"
+  "updatedAt": "2026-10-23T02:11:09.347Z"
 }
