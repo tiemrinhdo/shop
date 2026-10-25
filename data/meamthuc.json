@@ -12,7 +12,7 @@
     {
       "slug": "mi-nau-lien",
       "name": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "count": 28
+      "count": 29
     },
     {
       "slug": "tra-do-uong",
@@ -50,7 +50,7 @@
       "price": "59.000đ",
       "sold": "1.8k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-824ik-mpkvtikbgphpde",
-      "affiliateUrl": "https://s.shopee.vn/1gJZZkeiBc?lp=aff",
+      "affiliateUrl": "https://s.shopee.vn/2gC6lhtni1?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -72,7 +72,7 @@
       "price": "59.000đ",
       "sold": "4.7k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/9APaVasKIn?lp=aff",
+      "affiliateUrl": "https://s.shopee.vn/1LgjB8fyra?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -613,7 +613,18 @@
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-ms8munae2n7o8d",
       "affiliateUrl": "https://s.shopee.vn/6fiFIIfmGE?lp=aff",
       "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "(1KG) Mạch Nha Nếp Trung Quốc Nguyên Chất - Mạch Nha Vị Ngọt Thanh Từ...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "17.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtkg41qi1e68c1",
+      "affiliateUrl": "https://s.shopee.vn/8fTOmVKcNB?lp=aff",
+      "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-25T04:26:08.630Z"
+  "updatedAt": "2026-10-25T04:49:05.126Z"
 }
