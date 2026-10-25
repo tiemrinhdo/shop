@@ -12,17 +12,17 @@
     {
       "slug": "mi-nau-lien",
       "name": "🍜 Mì, Bún & Đồ Nấu Liền",
-      "count": 19
+      "count": 28
     },
     {
       "slug": "tra-do-uong",
       "name": "🥤 Trà & Đồ Uống",
-      "count": 4
+      "count": 6
     },
     {
       "slug": "do-an-vat",
       "name": "🍡 Ăn Vặt Hot Trend",
-      "count": 15
+      "count": 17
     },
     {
       "slug": "do-bep-nau",
@@ -72,7 +72,7 @@
       "price": "59.000đ",
       "sold": "4.7k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mqzwmznhtds1e4",
-      "affiliateUrl": "https://s.shopee.vn/1LgjB8fyra?lp=aff",
+      "affiliateUrl": "https://s.shopee.vn/9APaVasKIn?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -470,7 +470,150 @@
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mrv2qsbg2ayte9",
       "affiliateUrl": "https://s.shopee.vn/4fxCffDTPq",
       "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Bột Gia Vị Tẩm Ướp Cánh Gà Nướng Elephant Country, Bột Gia Vị Ướp...",
+      "category": "tra-do-uong",
+      "categoryName": "🥤 Trà & Đồ Uống",
+      "price": "59.000đ",
+      "sold": "5.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mgjmt9v8bp555d",
+      "affiliateUrl": "https://s.shopee.vn/80Deych4PP?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "[ HOT ] Muối Mè Hạt Lanh Thơm Béo - Gia Vị Rắc Cơm, Salad | Gia Vị...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "14.1k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mimjw8iflv609a",
+      "affiliateUrl": "https://s.shopee.vn/2LZIED2duK?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Gia vị nấu ăn Mai Quế Lộ 3 Bông Hồng 480ml - mai quế lộ hoa hồng gia...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "10.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtfdysthdczl7e",
+      "affiliateUrl": "https://s.shopee.vn/2VsiQW20ZN?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Xì dầu /Nước Tương Hải Thiên Nhãn Vàng Bình 1.9Lit - HƯƠNG VỊ TRUYỀN...",
+      "category": "tra-do-uong",
+      "categoryName": "🥤 Trà & Đồ Uống",
+      "price": "59.000đ",
+      "sold": "7.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-8262r-mm5rq883b7yna2",
+      "affiliateUrl": "https://s.shopee.vn/20wRpb3uaI?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Gia vị gia vị gia vị gia vị gia vị Gia vị Trung Quốc Thực phẩm phương...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "12.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-823qv-mp5e90qap0chd7",
+      "affiliateUrl": "https://s.shopee.vn/2BFs1u3HFL?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Bột ớt cay tê 1&#43;2 100g, ớt bột chấm lạp xưởng, gia vị rắc nướng Trung...",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "2.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6othdnuhe3la1",
+      "affiliateUrl": "https://s.shopee.vn/8AX5AxJUWr?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "1kg Khô Cá Ngộ Nhỏ Nấu Hủ Tiếu Thơm Ngon Đặc Trưng Món Hoa- VỰA KHÔ...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "12.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lubs9g5oiwi973",
+      "affiliateUrl": "https://s.shopee.vn/8KqVNGIrBu?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "(BỊCH LỚN 300 CÁI) Găng tay đa dụng TPE TOPGIA chính hãng treo tường...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "10.2k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo86wjb1foqqff",
+      "affiliateUrl": "https://s.shopee.vn/8V9vZZIDqx?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Gia Vị Bột Ớt Cay, Gia Vị Trộn Vân Nam 1&#43;2 Ni Luo Fei – Gia Vị Cay Tê...",
+      "category": "do-an-vat",
+      "categoryName": "🍡 Ăn Vặt Hot Trend",
+      "price": "59.000đ",
+      "sold": "3.6k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjatvqoyups3cb",
+      "affiliateUrl": "https://s.shopee.vn/9zyjMKCVoG?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Ớt Chưng Dầu Laoganma Đủ Vị Chuẩn Nội Địa, Gia Vị Trung Hoa - Ăn Vặt...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "9.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzufixqfpsbl51",
+      "affiliateUrl": "https://s.shopee.vn/AAI9YdBsTJ?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Set 5 Chai Mao Đài Ngũ Hổ Tướng Quốc Bảo Trung Hoa, Combo Mao Đài 5...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "7.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mi8vgz3mpczlaa",
+      "affiliateUrl": "https://s.shopee.vn/gR4FCUjj9?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "Bột Muối Tiêu Tỏi YangYiYi Gia Vị Trung Hoa Ướp Chiên Tôm, Thịt, Cánh...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "10.6k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3hbnp050t6d0e",
+      "affiliateUrl": "https://s.shopee.vn/W7e2tVN48?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "meamthuc",
+      "title": "(date mới)Bún Ốc  bà Tôn 320g- bún ốc liễu châu- bún ốc lý tử thất |...",
+      "category": "mi-nau-lien",
+      "categoryName": "🍜 Mì, Bún & Đồ Nấu Liền",
+      "price": "59.000đ",
+      "sold": "10.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-ms8munae2n7o8d",
+      "affiliateUrl": "https://s.shopee.vn/6fiFIIfmGE?lp=aff",
+      "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-23T02:11:13.242Z"
+  "updatedAt": "2026-10-25T04:26:08.630Z"
 }

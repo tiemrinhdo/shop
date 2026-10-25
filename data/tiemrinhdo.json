@@ -2,7 +2,7 @@
   "success": true,
   "sheet": "tiemrinhdo",
   "type": "channels_list",
-  "count": 4,
+  "count": 5,
   "channels": [
     {
       "name": "Ăn Là Nghiền",
@@ -35,7 +35,15 @@
       "avatarUrl": "https://graph.facebook.com/1465868573257922/picture?type=large",
       "facebookUrl": "https://www.facebook.com/1465868573257922",
       "badge": "✨ Kênh Mới"
+    },
+    {
+      "name": "Tiệm Review Đồ",
+      "slug": "tiemreviewdo",
+      "description": "Kênh review đồ gia dụng thông minh, đồ tiện ích đời sống & công nghệ xịn sò. Đầy đủ giỏ hàng Shopee cho các tín đồ mê sắm đồ hay! - Ghé giỏ hàng: https://tiemrinhdo.github.io/shop/?c=tiemreviewdo",
+      "avatarUrl": "https://graph.facebook.com/1411615898701348/picture?type=large",
+      "facebookUrl": "https://www.facebook.com/1411615898701348",
+      "badge": "✨ Kênh Mới"
     }
   ],
-  "updatedAt": "2026-10-23T02:11:06.675Z"
+  "updatedAt": "2026-10-25T04:25:57.024Z"
 }

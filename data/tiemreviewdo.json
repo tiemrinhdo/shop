@@ -1,0 +1,118 @@
+{
+  "success": true,
+  "sheet": "tiemreviewdo",
+  "channel": {
+    "name": "Tiệm Review Đồ",
+    "facebookUrl": "https://www.facebook.com/1411615898701348",
+    "avatarUrl": "https://graph.facebook.com/1411615898701348/picture?type=large",
+    "bio": "Kênh review đồ gia dụng thông minh, đồ tiện ích đời sống & công nghệ xịn sò. Đầy đủ giỏ hàng Shopee cho các tín đồ mê sắm đồ hay! - Ghé giỏ hàng: https://tiemrinhdo.github.io/shop/?c=tiemreviewdo",
+    "themeColor": "#EA580C"
+  },
+  "categories": [
+    {
+      "slug": "gia-dung-thong-minh",
+      "name": "🏠 Đồ Gia Dụng Thông Minh",
+      "count": 3
+    },
+    {
+      "slug": "tien-ich-doi-song",
+      "name": "⚡ Tiện Ích & Đời Sống",
+      "count": 1
+    },
+    {
+      "slug": "nha-bep-phong-an",
+      "name": "🍳 Nhà Bếp & Bàn Ăn",
+      "count": 1
+    },
+    {
+      "slug": "phu-kien-cong-nghe",
+      "name": "🎧 Phụ Kiện & Công Nghệ",
+      "count": 1
+    },
+    {
+      "slug": "ve-sinh-nha-cua",
+      "name": "🧹 Dọn Dẹp & Vệ Sinh",
+      "count": 1
+    }
+  ],
+  "products": [
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Ô dù che mưa che nắng 12 nan dẻo gấp gọn tự động,chất liệu Polyester...",
+      "category": "tien-ich-doi-song",
+      "categoryName": "⚡ Tiện Ích & Đời Sống",
+      "price": "59.000đ",
+      "sold": "9.9k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtoouy4z85c08d",
+      "affiliateUrl": "https://s.shopee.vn/AUv1Bgnui3?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Tủ Đựng Mỹ Phẩm, Hộp Đựng Mỹ Phẩm, Kệ Đựng Mỹ Phẩm, Ngăn Kéo Đựng Mỹ...",
+      "category": "gia-dung-thong-minh",
+      "categoryName": "🏠 Đồ Gia Dụng Thông Minh",
+      "price": "59.000đ",
+      "sold": "9.5k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj4i9oqk72ducc",
+      "affiliateUrl": "https://s.shopee.vn/9Kj3nXsM4q?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "[ CHÍNH HÃNG] Khăn Lau Xơ Mướp Đa Năng HUMA (Cắt tùy ý). Siêu thấm...",
+      "category": "ve-sinh-nha-cua",
+      "categoryName": "🧹 Dọn Dẹp & Vệ Sinh",
+      "price": "59.000đ",
+      "sold": "15.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-modp4d4njw2477",
+      "affiliateUrl": "https://s.shopee.vn/8fTN0LgxGR?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Đèn Pin Siêu Sáng Kumo Chip Cob XHP50 Vỏ Kim Loại Tích Điện Chống...",
+      "category": "gia-dung-thong-minh",
+      "categoryName": "🏠 Đồ Gia Dụng Thông Minh",
+      "price": "59.000đ",
+      "sold": "7.0k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmlwoupjsbtrd7",
+      "affiliateUrl": "https://s.shopee.vn/9pfKOUcVtg?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Thương Hiệu Búp Bê Stubborn Vết Bẩn Sạch Hoa Hồng Hương Bột Giặt Quần...",
+      "category": "phu-kien-cong-nghe",
+      "categoryName": "🎧 Phụ Kiện & Công Nghệ",
+      "price": "59.000đ",
+      "sold": "10.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/sg-11134201-825as-mqtxwaqy1x4zc6",
+      "affiliateUrl": "https://s.shopee.vn/9fLuCBd9Ef?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Bao cao su siêu mỏng OiO nhiều gel bôi trơn hỗ trợ kéo dài thời gian...",
+      "category": "nha-bep-phong-an",
+      "categoryName": "🍳 Nhà Bếp & Bàn Ăn",
+      "price": "59.000đ",
+      "sold": "6.8k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mogal5hbot1l41",
+      "affiliateUrl": "https://s.shopee.vn/9V2TzsdmZe?lp=aff",
+      "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemreviewdo",
+      "title": "Nước Giặt Đậm Đặc Hương Hoa Sương Mai, Phấn Tinh Khôi Can 2 Đầu Vòi...",
+      "category": "gia-dung-thong-minh",
+      "categoryName": "🏠 Đồ Gia Dụng Thông Minh",
+      "price": "59.000đ",
+      "sold": "13.4k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-msxgtxpwetc17f",
+      "affiliateUrl": "https://s.shopee.vn/9Kj3nZePud?lp=aff",
+      "badge": "🔥 Bán chạy"
+    }
+  ],
+  "updatedAt": "2026-10-25T04:26:11.524Z"
+}
