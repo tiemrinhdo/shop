@@ -6,6 +6,22 @@
   <title>Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn</title>
   <meta name="description" content="Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được Tiệm Rinh Đồ chọn lọc từ các sàn mua sắm online.">
   
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./logo.png">
+
+  <!-- OPEN GRAPH / FACEBOOK SOCIAL PREVIEW -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn">
+  <meta property="og:description" content="Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được chọn lọc từ các sàn mua sắm online.">
+  <meta property="og:image" content="./logo.png">
+  <meta property="og:site_name" content="Tiệm Rinh Đồ">
+
+  <!-- TWITTER CARD PREVIEW -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tiệm Rinh Đồ — Khám Phá Đồ Hay, Deal Xịn">
+  <meta name="twitter:description" content="Khám phá những món đồ hay, sản phẩm hữu ích và deal đáng chú ý được chọn lọc từ các sàn mua sắm online.">
+  <meta name="twitter:image" content="./logo.png">
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -969,14 +985,23 @@
 
         document.getElementById('storeName').textContent = pageName;
         document.title = `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`;
+        const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+        if (ogTitleMeta) ogTitleMeta.setAttribute('content', `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`);
+        const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
+        if (twitterTitleMeta) twitterTitleMeta.setAttribute('content', `${pageName} - Tiệm Rinh Đồ | Sản Phẩm Review`);
+
         const footerName = document.getElementById('footerStoreName');
         if (footerName) footerName.textContent = pageName;
 
-        if (ch.bio && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
-          document.getElementById('storeTagline').textContent = ch.bio;
-        } else {
-          document.getElementById('storeTagline').textContent = 'Tất cả sản phẩm xuất hiện trong các video review của kênh đều ở đây hết nha! 👇🛒';
-        }
+        const taglineText = (ch.bio && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền'))
+          ? ch.bio
+          : 'Tất cả sản phẩm xuất hiện trong các video review của kênh đều ở đây hết nha! 👇🛒';
+        document.getElementById('storeTagline').textContent = taglineText;
+
+        const ogDescMeta = document.querySelector('meta[property="og:description"]');
+        if (ogDescMeta) ogDescMeta.setAttribute('content', taglineText);
+        const twitterDescMeta = document.querySelector('meta[name="twitter:description"]');
+        if (twitterDescMeta) twitterDescMeta.setAttribute('content', taglineText);
 
         const avatarEl = document.getElementById('channelAvatar');
         if (ch.avatarUrl && (rawKey.toLowerCase() === 'anlanghien' || ch.name !== 'Ăn Là Nghiền')) {
@@ -1222,10 +1247,22 @@
       }
     }
 
+    // Helper tự động gắn SubID đo lường chuyển đổi từ Landing Page (Attribution Tracking)
+    function buildTrackedShopeeUrl(rawUrl, channelSlug) {
+      if (!rawUrl) return 'https://shopee.vn';
+      const cleanUrl = rawUrl.trim();
+      if (cleanUrl.includes('sub_id=')) return cleanUrl;
+      const slug = (channelSlug || 'tiemrinhdo').toLowerCase().replace(/[^a-z0-9_-]/g, '');
+      const subId = `landing_${slug}`;
+      const separator = cleanUrl.includes('?') ? '&' : '?';
+      return `${cleanUrl}${separator}sub_id=${encodeURIComponent(subId)}`;
+    }
+
     // ========================================================
     // 4. RENDER GIAO DIỆN SẢN PHẨM (TỐI ƯU APPEND, KHÔNG LOAD LẠI DOM CŨ)
     // ========================================================
     function createProductCardHtml(item, idx) {
+      const trackedUrl = buildTrackedShopeeUrl(item.affiliateUrl, channelKey);
       return `
         <div class="product-card" style="animation-delay: ${(idx % PAGE_LIMIT) * 0.04}s">
           <div class="card-thumb-wrap">
@@ -1244,7 +1281,7 @@
               <span class="item-price">${item.price || 'Giá tốt'}</span>
               ${item.sold ? `<span class="item-sold">${item.sold}</span>` : ''}
             </div>
-            <a href="${item.affiliateUrl}" target="_blank" rel="noopener noreferrer" class="buy-link-btn">
+            <a href="${trackedUrl}" target="_blank" rel="noopener noreferrer" class="buy-link-btn">
               <span>🛒 Mua trên Shopee</span>
             </a>
           </div>

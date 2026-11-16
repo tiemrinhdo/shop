@@ -12,7 +12,7 @@
     {
       "slug": "an-vat",
       "name": "🍿 Bánh & Đồ Ăn Vặt",
-      "count": 18
+      "count": 19
     },
     {
       "slug": "gia-vi",
@@ -28,13 +28,13 @@
   "products": [
     {
       "sheet": "tiemanvat",
-      "title": "Thùng Bánh Bông Lan Đài Loan Mix Vị 1KG - đồ ăn vặt nội địa Đài Loan...",
+      "title": "Thùng Bánh Bông Lan Đài Loan Mix Vị 1KG đồ ăn vặt nội địa Đài Loan...",
       "category": "an-vat",
       "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
       "price": "59.000đ",
-      "sold": "3.9k đã bán",
+      "sold": "14.2k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsvib0wcec2h27",
-      "affiliateUrl": "https://s.shopee.vn/9Kj2CaXX8N?lp=aff",
+      "affiliateUrl": "https://s.shopee.vn/9APc0ELYta?lp=aff",
       "badge": "🔥 Bán chạy"
     },
     {
@@ -193,11 +193,11 @@
     },
     {
       "sheet": "tiemanvat",
-      "title": "Lạp Xưởng Mini Vị Ngọt Kiểu Trung Hoa – Chuẩn Vị Quảng Đông",
+      "title": "Lạp Xưởng Mini Vị Ngọt Kiểu Trung Hoa Chuẩn Vị Quảng Đông",
       "category": "an-vat",
       "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
       "price": "59.000đ",
-      "sold": "3.9k đã bán",
+      "sold": "7.6k đã bán",
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mo5hytvwngn63e",
       "affiliateUrl": "https://s.shopee.vn/906Bo4EVLb?lp=aff",
       "badge": "🔥 Bán chạy"
@@ -278,7 +278,18 @@
       "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mtqffls3flzef0",
       "affiliateUrl": "https://s.shopee.vn/6Am0SKB0m3?lp=aff",
       "badge": "🔥 Bán chạy"
+    },
+    {
+      "sheet": "tiemanvat",
+      "title": "Bánh Tráng Dừa Non Đặc Sản Đà Nẵng - Bánh Dừa Non Thơm Nức Mùi Dừa Vị...",
+      "category": "an-vat",
+      "categoryName": "🍿 Bánh & Đồ Ăn Vặt",
+      "price": "59.000đ",
+      "sold": "1.3k đã bán",
+      "imageUrl": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8eje79pm532e",
+      "affiliateUrl": "https://s.shopee.vn/2qViTHSTIf?lp=aff",
+      "badge": "🔥 Bán chạy"
     }
   ],
-  "updatedAt": "2026-10-25T04:49:06.792Z"
+  "updatedAt": "2026-11-16T09:06:35.274Z"
 }
